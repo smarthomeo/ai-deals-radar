@@ -214,6 +214,24 @@ body {
 .badge-bypass { background: rgba(239,68,68,0.15); color: var(--red); }
 .badge-unknown { background: rgba(148,163,184,0.15); color: var(--text-secondary); }
 
+/* Verification badges */
+.verify-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.verify-verified { background: rgba(34,197,94,0.15); color: var(--green); }
+.verify-unverified { background: rgba(148,163,184,0.1); color: var(--text-muted); }
+.verify-suspicious { background: rgba(234,179,8,0.15); color: var(--yellow); }
+.verify-expired { background: rgba(239,68,68,0.15); color: var(--red); }
+
 .score-dots {
   display: flex;
   gap: 3px;
@@ -439,7 +457,7 @@ body {
       <span class="logo-icon">📡</span>
       <h1>AI Deals Radar</h1>
     </div>
-    <div class="header-stats">
+    <div class="header-stats" id="header-stats">
       <span><span class="stat-value" id="total-deals">—</span> deals</span>
       <span>Updated <span class="stat-value" id="last-updated">—</span></span>
     </div>
@@ -467,6 +485,13 @@ body {
     <option value="newest">Newest First</option>
     <option value="oldest">Oldest First</option>
   </select>
+  <select class="filter-select" id="filter-verify">
+    <option value="">All Verification</option>
+    <option value="verified">✅ Verified</option>
+    <option value="unverified">⏳ Unverified</option>
+    <option value="suspicious">⚠️ Suspicious</option>
+    <option value="expired">❌ Expired</option>
+  </select>
 </div>
 
 <main class="grid" id="deals-grid">
@@ -487,7 +512,7 @@ body {
 const STATE = {
   deals: [],
   filtered: [],
-  filters: { search: '', source: '', type: '', score: 0, sort: 'score' },
+  filters: { search: '', source: '', type: '', score: 0, sort: 'score', verify: '' },
 };
 
 const BADGE_LABELS = {
@@ -499,6 +524,13 @@ const BADGE_LABELS = {
   bypass: '🔓 Bypass',
   exploit: '🔓 Exploit',
   free_trial: '🆓 Free Trial',
+};
+
+const VERIFY_LABELS = {
+  verified: '✅ Verified',
+  unverified: '⏳ Unverified',
+  suspicious: '⚠️ Suspicious',
+  expired: '❌ Expired',
 };
 
 const SOURCE_ICONS = {
@@ -553,6 +585,9 @@ function renderCard(deal) {
   const title = deal.tool_name || 'Unknown Tool';
   const link = deal.deal_url || deal.source_url || '#';
   const domain = (() => { try { return new URL(link).hostname.replace('www.',''); } catch { return ''; }})();
+  const vStatus = deal.verification_status || 'unverified';
+  const vLabel = VERIFY_LABELS[vStatus] || vStatus;
+  const vEvidence = deal.verification_evidence || '';
 
   let infoHtml = '';
   if (deal.discount_percent || deal.discount_amount) {
@@ -593,10 +628,12 @@ function renderCard(deal) {
       </div>
       <div class="card-meta">
         ${renderScoreDots(deal.score || 0)}
+        <span class="verify-badge verify-${vStatus}">${vLabel}</span>
         <span class="meta-tag">${sourceIcon} ${escapeHtml(deal.source)}</span>
         ${deal.author ? `<span class="meta-tag">@${escapeHtml(deal.author.replace('@',''))}</span>` : ''}
         ${deal.is_ai_model ? '<span class="meta-tag">🤖 Model</span>' : ''}
       </div>
+      ${vEvidence ? `<div class="card-summary" style="border-left-color:${vStatus === 'verified' ? 'var(--green)' : vStatus === 'expired' ? 'var(--red)' : 'var(--yellow)'}"><strong>${vLabel}:</strong> ${escapeHtml(vEvidence).substring(0, 150)}${vEvidence.length > 150 ? '…' : ''}</div>` : ''}
       ${infoHtml ? `<div class="deal-info">${infoHtml}</div>` : ''}
       ${summaryHtml}
       <div class="card-footer">
@@ -617,13 +654,14 @@ function escapeAttr(s) {
 }
 
 function applyFilters() {
-  const { search, source, type, score, sort } = STATE.filters;
+  const { search, source, type, score, sort, verify } = STATE.filters;
   const q = search.toLowerCase().trim();
 
   STATE.filtered = STATE.deals.filter(d => {
     if (source && d.source !== source) return false;
     if (type && d.deal_type !== type) return false;
     if (score && (d.score || 0) < score) return false;
+    if (verify && (d.verification_status || 'unverified') !== verify) return false;
     if (q) {
       const haystack = [d.tool_name, d.normalized_brand, d.title, d.summary, d.discount_code, d.author, d.source]
         .filter(Boolean).join(' ').toLowerCase();
@@ -682,7 +720,7 @@ function wireEvents() {
     debounce = setTimeout(() => { STATE.filters.search = e.target.value; applyFilters(); }, 200);
   });
 
-  ['filter-source', 'filter-type', 'filter-score', 'filter-sort'].forEach(id => {
+  ['filter-source', 'filter-type', 'filter-score', 'filter-sort', 'filter-verify'].forEach(id => {
     document.getElementById(id).addEventListener('change', e => {
       const key = id.replace('filter-', '');
       STATE.filters[key] = key === 'score' ? parseInt(e.target.value) || 0 : e.target.value;
@@ -706,6 +744,20 @@ async function init() {
     STATE.deals = data.deals || [];
     document.getElementById('total-deals').textContent = data.total || STATE.deals.length;
     document.getElementById('last-updated').textContent = timeAgo(data.generated_at);
+
+    // Verification stats
+    const vCounts = { verified: 0, unverified: 0, suspicious: 0, expired: 0 };
+    STATE.deals.forEach(d => { vCounts[d.verification_status || 'unverified']++; });
+    const statsEl = document.getElementById('header-stats');
+    if (statsEl) {
+      statsEl.innerHTML = `
+        <span><span class="stat-value">${data.total || STATE.deals.length}</span> deals</span>
+        <span>✅ <span class="stat-value">${vCounts.verified}</span> verified</span>
+        <span>⚠️ <span class="stat-value">${vCounts.suspicious}</span> suspicious</span>
+        <span>❌ <span class="stat-value">${vCounts.expired}</span> expired</span>
+        <span>Updated <span class="stat-value">${timeAgo(data.generated_at)}</span></span>
+      `;
+    }
 
     populateFilters();
     wireEvents();

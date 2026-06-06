@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T09:40:36.134481+00:00",
+  "generated_at": "2026-06-06T09:54:38.539537+00:00",
   "total": 165,
   "window_days": 90,
   "deals": [
@@ -26,7 +26,10 @@
       "expiry": null,
       "summary": "Students get $2,000+ worth of developer tools and AI subscriptions for free with GitHub Student Pack and Cursor Pro.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19020,
@@ -51,7 +54,10 @@
       "expiry": "Midnight PT today (Flash Friday)",
       "summary": "Lifetime access to the rebuilt Founders Stack with $112K value, closing in 60 minutes",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19039,
@@ -76,7 +82,10 @@
       "expiry": "Midnight PT or when the last seat is taken (within 3 hours from posting)",
       "summary": "Last seat for lifetime access to the rebuilt Founders Stack, including Revenue Blueprint, Client Magnet, HERMES OS, and more, valued at over $25,000.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19069,
@@ -101,7 +110,10 @@
       "expiry": "Midnight PT or when the last seat fills (within 3 hours from posting)",
       "summary": "Last seat for lifetime access to the rebuilt Founders Stack, including Revenue Blueprint, Client Magnet, HERMES OS, and more, valued at over $25,000.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19088,
@@ -126,7 +138,10 @@
       "expiry": "4 hours from posting",
       "summary": "Last 2 seats for lifetime access to Founders Stack with playbooks and bonuses, 4 hours left.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19129,
@@ -151,7 +166,10 @@
       "expiry": "5 hours from posting or when seats fill",
       "summary": "Lifetime deal on HERMES OS Founders Stack with 10 revenue agents, limited time offer.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18198,
@@ -176,7 +194,10 @@
       "expiry": "30 days from signup",
       "summary": "Get 30-day free Notion Business trial for unlimited Claude Opus 4.8 and other AI models, no credit card needed.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18220,
@@ -201,7 +222,10 @@
       "expiry": null,
       "summary": "Opt into OpenAI's Data Sharing Program to get up to 10M free API tokens daily, resetting every 24 hours.",
       "is_ai_model": true,
-      "model_provider": "OpenAI"
+      "model_provider": "OpenAI",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18238,
@@ -226,7 +250,10 @@
       "expiry": null,
       "summary": "Microsoft launched MAI Code 1 Flash, a free coding AI model inside GitHub Copilot, available now on the free plan.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17514,
@@ -251,7 +278,10 @@
       "expiry": "2 days from now",
       "summary": "Last 2 days: APIKey3 offers up to 90% off on AI API access with no face verification, high concurrency, and $0.2 free test credits for new users.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17538,
@@ -276,7 +306,10 @@
       "expiry": null,
       "summary": "Get up to 10M free API tokens daily by opting into OpenAI's Data Sharing Program",
       "is_ai_model": true,
-      "model_provider": "OpenAI"
+      "model_provider": "OpenAI",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17600,
@@ -301,7 +334,10 @@
       "expiry": "Midnight PT (60 minutes from post)",
       "summary": "Lifetime deal: $399 for Agent OS with custom build on upgraded Hermes, $112K value, expires in 60 minutes.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17635,
@@ -326,7 +362,10 @@
       "expiry": "midnight PT today",
       "summary": "Lifetime price lock at $399 for Agent OS Founders Deal with custom agent build, closes at midnight PT",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17673,
@@ -351,7 +390,10 @@
       "expiry": "4 hours from posting or when last 2 spots are taken",
       "summary": "Free custom Agent OS build (worth $5K-$15K) + full Founders Stack for founders, last 2 spots, 4 hours only",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17707,
@@ -376,7 +418,10 @@
       "expiry": "Midnight PT or when seats fill (within 5 hours)",
       "summary": "Free custom AI agent build (5 hours) with lifetime price lock on upgraded Hermes platform, includes $92K+ value stack, seats filling fast.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17701,
@@ -401,7 +446,10 @@
       "expiry": "6 hours or midnight PT",
       "summary": "Free custom AI agent build on upgraded Hermes, 3 spots left, 6 hours, includes full stack worth $53k",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17731,
@@ -426,7 +474,10 @@
       "expiry": "30 days from signup",
       "summary": "Free 30-day Notion Business trial gives unlimited Claude Opus 4.8 and other AI models with no credit card needed.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17792,
@@ -451,7 +502,10 @@
       "expiry": "Limited time (launch discount period)",
       "summary": "Get MiniMax M3 API at 75% off (25% effective cost) by stacking 50% launch discount and 50% B.AI top-up bonus.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17884,
@@ -476,7 +530,10 @@
       "expiry": "30 days from signup",
       "summary": "Get unlimited Claude Opus 4.8 free for 30 days via Notion AI business trial, no credit card needed",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17928,
@@ -501,7 +558,10 @@
       "expiry": null,
       "summary": "Microsoft's new coding AI MAI-Code-1-Flash is free for all GitHub Copilot tiers starting today.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17999,
@@ -526,7 +586,10 @@
       "expiry": null,
       "summary": "Microsoft's new MAI-Code-1-Flash coding AI is now free for all GitHub Copilot tiers, including the free plan.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18038,
@@ -551,7 +614,10 @@
       "expiry": null,
       "summary": "Get Perplexity Pro free via student email, PayPal/Venmo, Samsung, Xfinity, or referral program (normally $20/month).",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18076,
@@ -576,7 +642,10 @@
       "expiry": null,
       "summary": "Students get Kiro Pro and Cursor Pro free for a year (no card needed) plus NoteGPT free month – $480 total value.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16702,
@@ -601,7 +670,10 @@
       "expiry": "June 7",
       "summary": "Get 75% OFF MiniMax M3 LLM access until June 7 via the provided link",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16762,
@@ -626,7 +698,10 @@
       "expiry": null,
       "summary": "Students get 12 months free Cursor Pro with .edu email, no credit card required",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19013,
@@ -651,7 +726,10 @@
       "expiry": "7 hours from posting",
       "summary": "Join AI Profit Boardroom at $59/month and get $50,000+ in bonuses free for the next 7 hours.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19009,
@@ -676,7 +754,10 @@
       "expiry": null,
       "summary": "Get 30% off Claude Opus 4.8 forever plus free credits on signup",
       "is_ai_model": true,
-      "model_provider": "Anthropic"
+      "model_provider": "Anthropic",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19029,
@@ -701,7 +782,10 @@
       "expiry": null,
       "summary": "Appsmith is a free, open-source alternative to Retool for building internal tools with drag-and-drop UI, database connectors, and AI agents.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19071,
@@ -726,7 +810,10 @@
       "expiry": "9 hours from posting",
       "summary": "Join AI Profit Boardroom for $59/month and get over $50,000 in free bonuses including a custom GPT, AI avatar clone system, and more, but only for the next 9 hours.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19077,
@@ -751,7 +838,10 @@
       "expiry": "10 hours from posting",
       "summary": "AI Profit Boardroom membership at $59/month with $50K+ bonuses for 10 hours",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19106,
@@ -776,7 +866,10 @@
       "expiry": null,
       "summary": "Free N8N Automation Mastery system (worth $199) with 50+ workflows, course, and AI prompts",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19118,
@@ -801,7 +894,10 @@
       "expiry": null,
       "summary": "Cursor releases Composer 2.5 on free tier, competing with premium tools",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19123,
@@ -826,7 +922,10 @@
       "expiry": "24 hours from posting",
       "summary": "Get AI Profit Boardroom membership with over $50,000 in bonuses for a limited time.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19139,
@@ -851,7 +950,10 @@
       "expiry": "Midnight PT or when 3 seats fill",
       "summary": "Lifetime access to Founders Stack with Revenue Blueprint, Client Magnet, HERMES OS, and playbooks; only 3 seats left.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18762,
@@ -876,7 +978,10 @@
       "expiry": null,
       "summary": "Free tier of LemmeBuyIt MCP with 50,000 requests/month for AI shopping agents",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18768,
@@ -901,7 +1006,10 @@
       "expiry": null,
       "summary": "Free tier of LemmeBuyIt MCP with 50,000 requests/month, no credit card needed.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18800,
@@ -926,7 +1034,10 @@
       "expiry": null,
       "summary": "FreeLLMAPI offers 1 billion free tokens per month for AI inference.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18809,
@@ -951,7 +1062,10 @@
       "expiry": null,
       "summary": "Free N8N Automation Mastery system (worth $199) with 50+ workflows and course.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18920,
@@ -976,7 +1090,10 @@
       "expiry": null,
       "summary": "Run Gemma 4 + Hermes AI agent free forever locally",
       "is_ai_model": true,
-      "model_provider": "Google"
+      "model_provider": "Google",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18930,
@@ -1001,7 +1118,10 @@
       "expiry": null,
       "summary": "Get up to $50,000 in OpenAI API credits by opting into data sharing",
       "is_ai_model": true,
-      "model_provider": "OpenAI"
+      "model_provider": "OpenAI",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18461,
@@ -1026,7 +1146,10 @@
       "expiry": "19 hours from posting",
       "summary": "Join AI Profit Boardroom for $59/month and get $50,000+ in bonuses free for the next 19 hours.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18514,
@@ -1051,7 +1174,10 @@
       "expiry": null,
       "summary": "Free tier with daily 300 credits and $5 bonus via referral link",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18602,
@@ -1076,7 +1202,10 @@
       "expiry": "June 18th",
       "summary": "Free access to Nvidia's 550B parameter AI model until June 18th via Neus Portal.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18612,
@@ -1101,7 +1230,10 @@
       "expiry": null,
       "summary": "Goose is a free, open-source AI agent that builds entire projects from a single prompt, works with 15+ AI providers and 70+ tools.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18649,
@@ -1126,7 +1258,10 @@
       "expiry": null,
       "summary": "Agnes AI offers free high-performance models for developers, no credit card required.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18311,
@@ -1151,7 +1286,10 @@
       "expiry": null,
       "summary": "DeepSeek locked in a 75% permanent price cut, offering Claude-level benchmarks at 28x cheaper.",
       "is_ai_model": true,
-      "model_provider": "DeepSeek"
+      "model_provider": "DeepSeek",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18317,
@@ -1176,7 +1314,10 @@
       "expiry": "Final hour (urgent, time-limited)",
       "summary": "Join AI Profit Boardroom now to unlock $42,300+ in AI automation bonuses",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18327,
@@ -1201,7 +1342,10 @@
       "expiry": null,
       "summary": "Run Claude Code for free by using a free API key from Open Router instead of paid Anthropic tokens",
       "is_ai_model": true,
-      "model_provider": "Anthropic"
+      "model_provider": "Anthropic",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18360,
@@ -1226,7 +1370,10 @@
       "expiry": null,
       "summary": "Run Claude Code for free using Claude Code Router with a free Open Router API key",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18372,
@@ -1251,7 +1398,10 @@
       "expiry": null,
       "summary": "Free 1-year access to Hermes Studio with 120+ AI models using NVIDIA Build API key",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18381,
@@ -1276,7 +1426,10 @@
       "expiry": null,
       "summary": "Vibesterz offers a completely free, private offline AI server with 50+ tools, no subscription, no data harvesting.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18405,
@@ -1301,7 +1454,10 @@
       "expiry": null,
       "summary": "Get 80% off ChatPlayground AI interview copilot with code EXB1A7GJ, plus 60-minute free trial.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18139,
@@ -1326,7 +1482,10 @@
       "expiry": "3 hours from posting",
       "summary": "Join The AI Profit Boardroom within 3 hours to get $43,300+ in bonuses including AI automation tools and training.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18145,
@@ -1351,7 +1510,10 @@
       "expiry": null,
       "summary": "Try Buda for free: get 300 daily credits and $5 bonus with referral link.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17510,
@@ -1376,7 +1538,10 @@
       "expiry": "5 hours from posting",
       "summary": "Join The AI Profit Boardroom within 5 hours to unlock $44,300+ in bonuses including AI automation stacks and time-saving methods.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17550,
@@ -1401,7 +1566,10 @@
       "expiry": "6 hours from posting",
       "summary": "Join The AI Profit Boardroom within 6 hours to get $44,800+ in AI automation bonuses.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17561,
@@ -1426,7 +1594,10 @@
       "expiry": null,
       "summary": "Win a free £795 London Tech Week Premium Pass by following, liking, retweeting, and commenting 'London'",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17612,
@@ -1451,7 +1622,10 @@
       "expiry": "8 hours from posting",
       "summary": "Limited-time offer to join The AI Profit Boardroom with $45,800+ in bonuses, expiring in 8 hours",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17618,
@@ -1476,7 +1650,10 @@
       "expiry": null,
       "summary": "New beta users get $50 free credits to access Google AI models via OpenAI-compatible API.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17636,
@@ -1501,7 +1678,10 @@
       "expiry": null,
       "summary": "Get $300 free API credits to test coding models and AI workflows on FreeModel.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17789,
@@ -1526,7 +1706,10 @@
       "expiry": null,
       "summary": "New AI model MiniMax M3 launched on AINFT with 500,000 free credits for new users.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17844,
@@ -1551,7 +1734,10 @@
       "expiry": null,
       "summary": "Lifetime access to a collection of production-grade automation templates for $4.99",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17880,
@@ -1576,7 +1762,10 @@
       "expiry": null,
       "summary": "30-day free trial of Notion Business with Claude Opus 4.8, GPT-5.5, and Gemini",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17998,
@@ -1601,7 +1790,10 @@
       "expiry": null,
       "summary": "Free month of WarFix Pro with promo code WARPFIX-PRO-1M",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17994,
@@ -1626,7 +1818,10 @@
       "expiry": null,
       "summary": "Run Claude Code for free by routing through Google Gemini 2.5 Flash Lite free tier",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18012,
@@ -1651,7 +1846,10 @@
       "expiry": "Limited-time; daily pool resets at 00:00 SGT",
       "summary": "Get 500K free credits + up to $100 bonus via deposit match on BAI AGI for AI model execution.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18036,
@@ -1676,7 +1874,10 @@
       "expiry": null,
       "summary": "Buy 1, get 1 free promo for ChatGPT Business 2-seat plan in multiple regions.",
       "is_ai_model": true,
-      "model_provider": "OpenAI"
+      "model_provider": "OpenAI",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18032,
@@ -1701,7 +1902,10 @@
       "expiry": null,
       "summary": "Lifetime access to NVIDIA DGX Spark for $2,999, enabling unlimited AI experiments without per-call costs.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18070,
@@ -1726,7 +1930,10 @@
       "expiry": null,
       "summary": "ChatGPT Business promo discount of A$45 for Australia region, 2 seats at A$25 each for 48 months.",
       "is_ai_model": true,
-      "model_provider": "OpenAI"
+      "model_provider": "OpenAI",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18097,
@@ -1751,7 +1958,10 @@
       "expiry": null,
       "summary": "New AI model MiniMax M3 offers 500,000 free credits for new users.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18087,
@@ -1776,7 +1986,10 @@
       "expiry": null,
       "summary": "Students get 1 free year of Cursor Pro with .edu email verification",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17450,
@@ -1801,7 +2014,10 @@
       "expiry": null,
       "summary": "Get free trial access to Chorus Max plan ($200/month) with Claude Opus 4.8 and all latest Claude models.",
       "is_ai_model": true,
-      "model_provider": "Anthropic"
+      "model_provider": "Anthropic",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17412,
@@ -1826,7 +2042,10 @@
       "expiry": "18 hours left",
       "summary": "Join The AI Profit Boardroom for $59/month with over $55,300 in bonuses free for 18 hours only.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16672,
@@ -1851,7 +2070,10 @@
       "expiry": null,
       "summary": "Get Peezy Go free tier with generous limits and first month for $5",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16685,
@@ -1876,7 +2098,10 @@
       "expiry": "20 HOURS LEFT",
       "summary": "Join The AI Profit Boardroom for $59/month with over $54,800 in bonuses free for a limited time.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16255,
@@ -1901,7 +2126,10 @@
       "expiry": null,
       "summary": "Get 33% off SEO package plus free months on bundle sign-up",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16270,
@@ -1926,7 +2154,10 @@
       "expiry": null,
       "summary": "Get 20% off Claude Opus 4.8 inference via Kilo Code provider network.",
       "is_ai_model": true,
-      "model_provider": "Anthropic"
+      "model_provider": "Anthropic",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18103,
@@ -1951,7 +2182,10 @@
       "expiry": null,
       "summary": "Get free credits to test Claude Opus 4.8 by signing up via the provided link.",
       "is_ai_model": true,
-      "model_provider": "Anthropic"
+      "model_provider": "Anthropic",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16350,
@@ -1976,7 +2210,10 @@
       "expiry": null,
       "summary": "Get 2,000 free gasless transactions with Q402 Agent Wallet trial",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16351,
@@ -2001,7 +2238,10 @@
       "expiry": null,
       "summary": "Get free trial access to Claude Opus 4.8 on Chorus Max plan ($200/month)",
       "is_ai_model": true,
-      "model_provider": "Anthropic"
+      "model_provider": "Anthropic",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16210,
@@ -2026,7 +2266,10 @@
       "expiry": null,
       "summary": "Get a free trial of MiniMax M3 LLM via OpenCode with 50% off first week",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 15889,
@@ -2051,7 +2294,10 @@
       "expiry": null,
       "summary": "Start a 7-day free trial of 6/6 for agent connectivity.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 15945,
@@ -2076,7 +2322,10 @@
       "expiry": null,
       "summary": "Claim 500,000 free credits on AINFT to access Claude Opus 4.8",
       "is_ai_model": true,
-      "model_provider": "Anthropic"
+      "model_provider": "Anthropic",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16352,
@@ -2101,7 +2350,10 @@
       "expiry": null,
       "summary": "Get $30 off ChatGPT Business for 2 seats, valid for 48 months in the US",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 15994,
@@ -2126,7 +2378,10 @@
       "expiry": null,
       "summary": "DeepSeek made its 75% API price cut permanent.",
       "is_ai_model": true,
-      "model_provider": "DeepSeek"
+      "model_provider": "DeepSeek",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 15996,
@@ -2151,7 +2406,10 @@
       "expiry": null,
       "summary": "DeepSeek makes 75% API price cut permanent",
       "is_ai_model": true,
-      "model_provider": "DeepSeek"
+      "model_provider": "DeepSeek",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16000,
@@ -2176,7 +2434,10 @@
       "expiry": null,
       "summary": "DeepSeek made its 75% API price cut permanent.",
       "is_ai_model": true,
-      "model_provider": "DeepSeek"
+      "model_provider": "DeepSeek",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16012,
@@ -2201,7 +2462,10 @@
       "expiry": null,
       "summary": "Xiaomi permanently cut Mimo V2.5 API pricing by up to 99%, making it significantly cheaper for AI workflows.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17016,
@@ -2226,7 +2490,10 @@
       "expiry": null,
       "summary": "Get 500 AI credits with referral code 'satosheesh' on HatcherLabs.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17072,
@@ -2251,7 +2518,10 @@
       "expiry": null,
       "summary": "Get 500 free AI credits by signing up with a referral link or code.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16536,
@@ -2276,7 +2546,10 @@
       "expiry": null,
       "summary": "Get $100 credits for Zo Computer with promo codes JING100 or CALEB100.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17122,
@@ -2301,7 +2574,10 @@
       "expiry": null,
       "summary": "Get a free month of Kura Pro+ with 2,000 credits to try Claude Opus 4.7 and other premium models.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16545,
@@ -2326,7 +2602,10 @@
       "expiry": null,
       "summary": "Access free institutional-grade pricing data from Pyth with no signup required.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16548,
@@ -2351,7 +2630,10 @@
       "expiry": null,
       "summary": "Use DeepSeek V4 Flash for free via Nous Portal in Hermes Agent, replacing paid ChatGPT Plus.",
       "is_ai_model": true,
-      "model_provider": "DeepSeek"
+      "model_provider": "DeepSeek",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16546,
@@ -2376,7 +2658,10 @@
       "expiry": null,
       "summary": "Get 30 days of free Notion Business access with Claude Opus 4.7 and GPT 5.5; cancel before day 30 to avoid charges.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16570,
@@ -2401,7 +2686,10 @@
       "expiry": null,
       "summary": "Use DeepSeek V4 Flash for free on Nous Portal with Hermes Agent, replacing $20/month ChatGPT Plus.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16589,
@@ -2426,7 +2714,10 @@
       "expiry": null,
       "summary": "Claim 121,000 free ElevenLabs credits ($22 value) using code 'elevenhacks' via GitHub sign-in.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17203,
@@ -2451,7 +2742,10 @@
       "expiry": "June 4",
       "summary": "Enter RoamAI's giveaway to win from a 100,000 $ROAM prize pool by creating and posting with just $1 worth of $ROAM.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17225,
@@ -2476,7 +2770,10 @@
       "expiry": null,
       "summary": "Get 1,000 free credits to try the new Wittify AI platform.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17245,
@@ -2501,7 +2798,10 @@
       "expiry": null,
       "summary": "Get 500,000 free credits + deposit match bonus up to $100 on ChainGPT's Solana integration",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17247,
@@ -2526,7 +2826,10 @@
       "expiry": null,
       "summary": "Get Kimu, a free, self-hosted AI video editor, as an alternative to paid tools like CapCut and Adobe Premiere.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17249,
@@ -2551,7 +2854,10 @@
       "expiry": null,
       "summary": "Get Kimu, a free, self-hosted AI video editor, as an alternative to paid tools like CapCut and Adobe Premiere.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17268,
@@ -2576,7 +2882,10 @@
       "expiry": "3 days",
       "summary": "Get 20% off Minara subscription plans (Lite $15, Starter $39, Pro $159) for 3 days.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17270,
@@ -2601,7 +2910,10 @@
       "expiry": null,
       "summary": "Claim $5M in free credits from Depthfirst's Open Defense Initiative for open source developers.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17276,
@@ -2626,7 +2938,10 @@
       "expiry": null,
       "summary": "Sign up for B.AI to get 500,000 free credits and access multiple top-tier AI models.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17298,
@@ -2651,7 +2966,10 @@
       "expiry": null,
       "summary": "Sign up via Google or crypto wallet to get 500,000 free credits on ChatPlayground.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17297,
@@ -2676,7 +2994,10 @@
       "expiry": null,
       "summary": "Get matched credits on deposits and access a $10K daily subsidy pool for AI usage",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17301,
@@ -2701,7 +3022,10 @@
       "expiry": null,
       "summary": "Claim free credits up to $100K+ for startups from AWS, Google, Anthropic, OpenAI, and more.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18729,
@@ -2726,7 +3050,10 @@
       "expiry": "Sept 30, 2026",
       "summary": "Kopi AI approval agent: free until Sept 30, 2026, plus 50% off first year after",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18732,
@@ -2751,7 +3078,10 @@
       "expiry": null,
       "summary": "New users get 500,000 free credits on B.AI to test multiple AI models and agents.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17310,
@@ -2776,7 +3106,10 @@
       "expiry": null,
       "summary": "Claim 500,000 free credits for new users on BAI_AGI platform",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18735,
@@ -2801,7 +3134,10 @@
       "expiry": "Limited-time; daily pool resets at 00:00 SGT",
       "summary": "B.AI offers 500K free credits on signup plus 1:1 deposit match up to $100 bonus and daily $10K subsidy pool for reduced AI compute costs.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18114,
@@ -2826,7 +3162,10 @@
       "expiry": "Limited-time; daily subsidy pool resets at 00:00 SGT",
       "summary": "Get up to $100 bonus credits with 1:1 deposit match and 500K free credits for new users on AI execution platform",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17337,
@@ -2851,7 +3190,10 @@
       "expiry": null,
       "summary": "Claim 500,000 free credits to access top AI models on ChatPlayground",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16104,
@@ -2876,7 +3218,10 @@
       "expiry": null,
       "summary": "Get $100 in free credits for Seltz search API for AI agents",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17340,
@@ -2901,7 +3246,10 @@
       "expiry": null,
       "summary": "Get 10% off and API vouchers by joining MiniMax through a referral link.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19049,
@@ -2926,7 +3274,10 @@
       "expiry": null,
       "summary": "Get 100 free scans of AEVRIS agent action firewall, no credit card required.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18826,
@@ -2951,7 +3302,10 @@
       "expiry": null,
       "summary": "Multiple promo codes: 15% off Stamp_seed, hodlwithLe, Sat123; 0.25% off first loan at hodlwithLe; 20% off Miami event tickets.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18898,
@@ -2976,7 +3330,10 @@
       "expiry": "16 hours from post time",
       "summary": "AI Profit Boardroom membership at $59/month with $50K+ bonuses for 16 hours",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18935,
@@ -3001,7 +3358,10 @@
       "expiry": "June 2026",
       "summary": "Save 40% and get free shipping on selected books from IVP with code IVPTECH26",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18936,
@@ -3026,7 +3386,10 @@
       "expiry": null,
       "summary": "HiveCode offers a free tier with 15+ Discord bot modules including AI tickets and giveaways",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18958,
@@ -3051,7 +3414,10 @@
       "expiry": null,
       "summary": "Tight Studio 3.0 offers a generous free tier with core screen recording features",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18450,
@@ -3076,7 +3442,10 @@
       "expiry": null,
       "summary": "33% off SEO package plus free months on bundles",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18582,
@@ -3101,7 +3470,10 @@
       "expiry": null,
       "summary": "Get 33% off full-service SEO package plus free months when you buy a bundle",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18671,
@@ -3126,7 +3498,10 @@
       "expiry": null,
       "summary": "30% discount on Visora AI",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18676,
@@ -3151,7 +3526,10 @@
       "expiry": null,
       "summary": "Get 1,000 free credits for Velma, a voice model that detects tone and emotion from raw audio.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18249,
@@ -3176,7 +3554,10 @@
       "expiry": null,
       "summary": "Enter Creality M1 & R1 Maker Day Giveaway for a chance to win a HEPA Filter + 3D Printer Tool Wrap Kit Pro.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18278,
@@ -3201,7 +3582,10 @@
       "expiry": null,
       "summary": "Get 30 free daily credits for Surf Skill, a crypto data integration for Claude Code, Cursor, and Codex.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18342,
@@ -3226,7 +3610,10 @@
       "expiry": "this weekend",
       "summary": "Get the 15-Minute AI Micro-SaaS Launchpad for $69 this weekend to quickly build and monetize AI micro-SaaS products.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18365,
@@ -3251,7 +3638,10 @@
       "expiry": null,
       "summary": "GitHub Copilot now offers a free tier for AI coding assistance",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18370,
@@ -3276,7 +3666,10 @@
       "expiry": null,
       "summary": "DevLaws offers a free tier to enforce engineering standards in AI-generated code",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18378,
@@ -3301,7 +3694,10 @@
       "expiry": "June 8",
       "summary": "Win 1 free ticket to SuperAI Singapore by following, reposting, and commenting.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18399,
@@ -3326,7 +3722,10 @@
       "expiry": null,
       "summary": "Microsoft launched MAI-Image-2.5, a new image AI model, available for free testing in the Microsoft playground.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18412,
@@ -3351,7 +3750,10 @@
       "expiry": null,
       "summary": "Get 20% off AutoYT, an AI tool that automates YouTube lead generation, by commenting 'AUTOYT'.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18146,
@@ -3376,7 +3778,10 @@
       "expiry": null,
       "summary": "Get 200 free daily credits for EasyClaw AI agent builder, plus 5% off with code MJLH8QY7.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18157,
@@ -3401,7 +3806,10 @@
       "expiry": null,
       "summary": "SpedaxAI offers a free plan with 100 credits to build AI agents.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18209,
@@ -3426,7 +3834,10 @@
       "expiry": null,
       "summary": "15% discount on architecture diagram workshop for digital members.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18223,
@@ -3451,7 +3862,10 @@
       "expiry": null,
       "summary": "Use promo code AWIGGY for a discount on ProxySeller proxies.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17644,
@@ -3476,7 +3890,10 @@
       "expiry": null,
       "summary": "Use promo code SARAHBHRL9 for a discount on EvoMap, a tool to save and reuse AI workflows.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17657,
@@ -3501,7 +3918,10 @@
       "expiry": null,
       "summary": "Get up to 6 months free access to Cobo's AI-powered digital asset wallet infrastructure for early-stage Web3 startups.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17690,
@@ -3526,7 +3946,10 @@
       "expiry": null,
       "summary": "Acuvis offers a free tier with 10 private repo reviews/month and unlimited public repo reviews in public beta.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17854,
@@ -3551,7 +3974,10 @@
       "expiry": null,
       "summary": "Velma API offers 1000 free credits for voice AI that detects tone, emotion, hesitation, and stress from audio.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17866,
@@ -3576,7 +4002,10 @@
       "expiry": null,
       "summary": "EvoMap API credits with discount code MARCUS6S7W",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17959,
@@ -3601,7 +4030,10 @@
       "expiry": "30 days",
       "summary": "Azure free trial offers $200 in credits for 30 days, but signup process is complex and may require workarounds",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18002,
@@ -3626,7 +4058,10 @@
       "expiry": null,
       "summary": "Get 500 free AI credits by signing up with referral code 'satosheesh'.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17447,
@@ -3651,7 +4086,10 @@
       "expiry": null,
       "summary": "Get Hyper Frames, a free video builder tool for zero dollars forever.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 15970,
@@ -3676,7 +4114,10 @@
       "expiry": null,
       "summary": "Sarvam AI cuts Vision AI API prices by 67% to boost enterprise adoption.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 15868,
@@ -3701,7 +4142,10 @@
       "expiry": null,
       "summary": "Sarvam AI cuts Vision AI API prices by 67% to boost enterprise adoption.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18109,
@@ -3726,7 +4170,10 @@
       "expiry": null,
       "summary": "Get $100 free AI credits from General Compute for API testing, agents, automation, and more.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 15958,
@@ -3751,7 +4198,10 @@
       "expiry": null,
       "summary": "Use Cloudflare Workers free tier, YouTube Data API, and Google AI Studio keys for Gemini models with no paid infrastructure.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 15975,
@@ -3776,7 +4226,10 @@
       "expiry": null,
       "summary": "Get 50% off a Pre-configured localGPT VM with code PromptEngineering.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 15977,
@@ -3801,7 +4254,10 @@
       "expiry": null,
       "summary": "Try Peezy Go with a free plan and $5 first month offer.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17070,
@@ -3826,7 +4282,10 @@
       "expiry": null,
       "summary": "Claim free credits to fuel your on-chain AI agents on BNB Chain",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17143,
@@ -3851,7 +4310,10 @@
       "expiry": null,
       "summary": "Access a free forecasting dashboard for crypto and stocks with advanced analytics.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17180,
@@ -3876,7 +4338,10 @@
       "expiry": null,
       "summary": "Get 500 free AI credits on HatcherLabs using referral code 'satosheesh'.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16068,
@@ -3901,7 +4366,10 @@
       "expiry": null,
       "summary": "Get 50% off a Pre-configured localGPT VM using code PromptEngineering.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17209,
@@ -3926,7 +4394,10 @@
       "expiry": null,
       "summary": "Join TRON Eco AI Pizza Day to claim 500,000 free credits and compete for a 2,000 USDT reward pool",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17213,
@@ -3951,7 +4422,10 @@
       "expiry": null,
       "summary": "Use code BLOOMENOW for Bloome workspace access and $5 credits per referral.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16091,
@@ -3976,7 +4450,10 @@
       "expiry": null,
       "summary": "Use promo code NETWORKCHUCK for a discount on a Hostinger VPS to run the Hermes AI agent.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17269,
@@ -4001,7 +4478,10 @@
       "expiry": null,
       "summary": "Sign up for free credits on ChatPlayground, a unified platform for major AI models.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 16094,
@@ -4026,7 +4506,10 @@
       "expiry": null,
       "summary": "Use promo code K246G6PJM9 for a discount on Krea 2 plan signup.",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18731,
@@ -4051,7 +4534,10 @@
       "expiry": null,
       "summary": "Get 500,000 free credits on B.AI for multi-model AI access.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 17331,
@@ -4076,7 +4562,10 @@
       "expiry": null,
       "summary": "Sign up for SpecSource's free tier with 100 credits/month.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 19135,
@@ -4101,7 +4590,10 @@
       "expiry": null,
       "summary": "Free trial of AI OPERATIVE chat system trained on ClaudeWar's database, then $9/month",
       "is_ai_model": true,
-      "model_provider": "other"
+      "model_provider": "other",
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     },
     {
       "id": 18149,
@@ -4126,7 +4618,10 @@
       "expiry": null,
       "summary": "Get 10 free credits to try image generation with multiple models on ChatPlayground.",
       "is_ai_model": false,
-      "model_provider": null
+      "model_provider": null,
+      "verification_status": "unverified",
+      "verified_at": "",
+      "verification_evidence": ""
     }
   ]
 }

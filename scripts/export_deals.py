@@ -8,6 +8,17 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 DB_PATH = Path(__file__).parent.parent.parent / "ai-deals-pipeline" / "deals.db"
+
+
+def _parse_verification_evidence(raw: str) -> str:
+    """Extract evidence string from verification_details JSON."""
+    if not raw:
+        return ""
+    try:
+        data = json.loads(raw)
+        return data.get("evidence", "")
+    except (json.JSONDecodeError, TypeError):
+        return ""
 OUTPUT_PATH = Path(__file__).parent.parent / "deals.json"
 MAX_DAYS = 90  # Rolling window
 
@@ -36,7 +47,10 @@ def export_deals():
             ci.tool_name,
             ci.deal_type,
             ci.deal_details,
-            ci.classified_at
+            ci.classified_at,
+            ci.verification_status,
+            ci.verified_at,
+            ci.verification_details
         FROM classified_items ci
         JOIN raw_items ri ON ci.raw_item_id = ri.id
         WHERE ci.is_deal = 1
@@ -80,6 +94,9 @@ def export_deals():
                 "summary": details.get("summary", ""),
                 "is_ai_model": details.get("is_ai_model", False),
                 "model_provider": details.get("model_provider", ""),
+                "verification_status": row["verification_status"] or "unverified",
+                "verified_at": row["verified_at"] or "",
+                "verification_evidence": _parse_verification_evidence(row["verification_details"]),
             }
         )
 
