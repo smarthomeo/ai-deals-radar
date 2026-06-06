@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T12:43:38.654434+00:00",
-  "total": 183,
+  "generated_at": "2026-06-06T13:11:01.461689+00:00",
+  "total": 186,
   "window_days": 90,
   "deals": [
     {
@@ -760,6 +760,62 @@
       "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter), with no mention of Cursor Pro, student deals, or any relevant pricing information. The provided content appears to be unrelated to the deal."
     },
     {
+      "id": 19383,
+      "source": "twitter",
+      "title": "Openai giving $50,000 in FREE API credits and it's hidden in your account settings 😳\n\nmost people have no idea this exists\n\nwhat you get every single day:\n- 250K tokens/day for GPT-5.5 and GPT-5.2 (po",
+      "source_url": "https://x.com/israfill/status/2063243438733263301",
+      "author": "@israfill",
+      "published_at": "2026-06-06T12:55:43+00:00",
+      "score": 4,
+      "tool_name": "OpenAI Data Sharing Program",
+      "normalized_brand": "OpenAI",
+      "deal_type": "free_api_credits",
+      "deal_url": "https://x.com/israfill/status/2063243438733263301",
+      "discount_percent": null,
+      "discount_amount": null,
+      "discount_code": null,
+      "price_info": null,
+      "free_tier_details": "250K tokens/day for GPT-5.5 and GPT-5.2, 2.5M tokens/day for GPT-5.1-Mini and GPT-5-Nano, up to 10M tokens/day for tiers 3-5",
+      "free_trial_details": null,
+      "free_api_credits": "Daily token allocation: 250K for GPT-5.5/5.2, 2.5M for GPT-5.1-Mini/GPT-5-Nano, up to 10M for tiers 3-5; resets daily",
+      "how_to_claim": "Go to account settings, click Data Controls → Sharing, opt in to both options, ensure positive account balance",
+      "expiry": null,
+      "summary": "Opt in to OpenAI's data sharing program for daily free API tokens",
+      "is_ai_model": true,
+      "model_provider": "OpenAI",
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T13:06:48.626112+00:00",
+      "verification_evidence": "Page content only shows a generic schema.org JSON-LD for a website (x.com) with a search action, no mention of OpenAI, data sharing program, API tokens, or any deal details."
+    },
+    {
+      "id": 19421,
+      "source": "twitter",
+      "title": "⏳ 𝟮𝟰 𝗛𝗼𝘂𝗿𝘀 𝗟𝗲𝗳𝘁: 𝗧𝗵𝗲 𝗦𝗮𝘁𝘂𝗿𝗱𝗮𝘆 𝗔𝗜 𝗖𝗮𝗹𝗺 𝗕𝘂𝗶𝗹𝗱𝗲𝗿 𝗜𝘀 𝗟𝗶𝘃𝗲 🧘 𝗦𝗮𝘃𝗲 𝗛𝗼𝘂𝗿𝘀 𝗪𝗶𝘁𝗵 𝗔𝗜 + $𝟱𝟭,𝟵𝟬𝟬 𝗜𝗻 𝗕𝗼𝗻𝘂𝘀𝗲𝘀\n\nSpend less time buried in busywork and more time on what actually matters — that's what the AI Profit B",
+      "source_url": "https://x.com/JulianGoldieSEO/status/2063234917342015784",
+      "author": "@JulianGoldieSEO",
+      "published_at": "2026-06-06T12:21:52+00:00",
+      "score": 4,
+      "tool_name": "AI Profit Boardroom",
+      "normalized_brand": "AI Profit Boardroom",
+      "deal_type": "promo_code",
+      "deal_url": "https://x.com/JulianGoldieSEO/status/2063234917342015784",
+      "discount_percent": null,
+      "discount_amount": "$51,900 in bonuses",
+      "discount_code": null,
+      "price_info": null,
+      "free_tier_details": null,
+      "free_trial_details": null,
+      "free_api_credits": null,
+      "how_to_claim": "Join the AI Profit Boardroom within the next 24 hours to receive the bonus stack.",
+      "expiry": "24 hours from post",
+      "summary": "Join AI Profit Boardroom within 24 hours to claim $51,900+ in bonuses.",
+      "is_ai_model": false,
+      "model_provider": null,
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T13:06:35.135801+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for a generic search site (x.com), with no mention of AI Profit Boardroom, bonuses, or any deal details."
+    },
+    {
       "id": 19346,
       "source": "twitter",
       "title": "Voxtakr Founding 50: $9/mo locked for life, or $79 lifetime.\n\nVoice or text notes, AI structures them into proper IT docs.\n\n50 seats. Free tier to try first.\n\nBuilt by an IT pro, for IT pros: https://",
@@ -1399,9 +1455,9 @@
       "summary": "Run Gemma 4 + Hermes AI agent free forever locally",
       "is_ai_model": true,
       "model_provider": "Google",
-      "verification_status": "unverified",
-      "verified_at": "2026-06-06T12:28:07.577246+00:00",
-      "verification_evidence": "LLM verification failed, page was accessible"
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T13:07:02.153102+00:00",
+      "verification_evidence": "Could not scrape page content"
     },
     {
       "id": 18930,
@@ -2015,9 +2071,9 @@
       "summary": "New AI model MiniMax M3 launched on AINFT with 500,000 free credits for new users.",
       "is_ai_model": true,
       "model_provider": "other",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T13:09:28.599448+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter) and basic CSS, with no mention of MiniMax M3, AINFT, free credits, or any AI deal."
     },
     {
       "id": 17844,
@@ -2043,9 +2099,9 @@
       "summary": "Lifetime access to a collection of production-grade automation templates for $4.99",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T13:09:12.743171+00:00",
+      "verification_evidence": "Page content only shows generic schema.org metadata for a search function on x.com (Twitter), with no mention of 'Full Automator's Vault', lifetime deals, or any pricing information."
     },
     {
       "id": 17880,
@@ -2071,9 +2127,37 @@
       "summary": "30-day free trial of Notion Business with Claude Opus 4.8, GPT-5.5, and Gemini",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T13:08:25.423031+00:00",
+      "verification_evidence": "Page content shows only Notion pricing plans and generic UI code, with no mention of a 30-day free trial, Claude Opus, GPT-5.5, Gemini, or any specific deal details."
+    },
+    {
+      "id": 19420,
+      "source": "twitter",
+      "title": "you can use claude opus 4.8 for FREE with zero credit card and no rate limits 😳\n\nnotion's 30 day business trial gives you unlimited claude opus 4.8 inside notion AI\n\ntakes 8 minutes to set up\n\nwhat yo",
+      "source_url": "https://x.com/israfill/status/2062500624152043636",
+      "author": "@israfill",
+      "published_at": "2026-06-04T11:44:02+00:00",
+      "score": 4,
+      "tool_name": "Notion AI",
+      "normalized_brand": "Notion",
+      "deal_type": "free_trial",
+      "deal_url": "https://x.com/israfill/status/2062500624152043636",
+      "discount_percent": null,
+      "discount_amount": null,
+      "discount_code": null,
+      "price_info": null,
+      "free_tier_details": null,
+      "free_trial_details": "30-day business trial with unlimited Claude Opus 4.8, GPT-5.5, Gemini access, Notion agents, research mode, meeting notes, and custom agents; no credit card required",
+      "free_api_credits": null,
+      "how_to_claim": "Step 1: Get a fresh email and create a new Gmail not used on Notion before. Step 2: Sign up for Notion in an incognito browser window, enter your fresh email, and verify it. Step 3: Create your workspace by clicking 'create workspace' and naming it anything. Step 4: Activate the business trial on the plan screen by selecting 'Business' and clicking 'try for 30 days' (no credit card). Step 5: Access Claude Opus 4.8 by clicking Notion AI in the left sidebar, clicking the model selector at the bottom of the chat box, selecting 'opus 4.8', and starting to prompt with zero limits. If already on Notion, skip to step 5. After 30 days, it asks you to pay or downgrade; repeat with another fresh email for another 30 days.",
+      "expiry": null,
+      "summary": "Get a 30-day free trial of Notion Business to access Claude Opus 4.8 with no rate limits and no credit card.",
+      "is_ai_model": true,
+      "model_provider": "Anthropic",
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T13:05:40.936659+00:00",
+      "verification_evidence": "Page content is only a generic schema.org JSON-LD for X.com (Twitter) with no mention of Notion AI, free trials, or any related deal information."
     },
     {
       "id": 17998,
@@ -2099,9 +2183,9 @@
       "summary": "Free month of WarFix Pro with promo code WARPFIX-PRO-1M",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T13:08:11.449555+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter) search functionality. No mention of WarpFix, promo codes, or any deal-related content."
     },
     {
       "id": 17994,
@@ -2127,9 +2211,9 @@
       "summary": "Run Claude Code for free by routing through Google Gemini 2.5 Flash Lite free tier",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T13:07:57.247710+00:00",
+      "verification_evidence": "Page content only shows a generic X.com (Twitter) search schema and basic HTML/CSS, with no mention of Claude Code Router, Google Gemini, or any related deal information."
     },
     {
       "id": 18012,
@@ -2155,9 +2239,9 @@
       "summary": "Get 500K free credits + up to $100 bonus via deposit match on BAI AGI for AI model execution.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T13:07:46.788586+00:00",
+      "verification_evidence": "Page content only contains tracking scripts and no mention of BAI AGI, free credits, deposit match, or any deal details."
     },
     {
       "id": 18036,
