@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T22:03:01.591813+00:00",
-  "total": 217,
+  "generated_at": "2026-06-06T23:02:45.079250+00:00",
+  "total": 218,
   "window_days": 90,
   "deals": [
     {
@@ -758,6 +758,34 @@
       "verification_status": "suspicious",
       "verified_at": "2026-06-06T12:16:02.403958+00:00",
       "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter), with no mention of Cursor Pro, student deals, or any relevant pricing information. The provided content appears to be unrelated to the deal."
+    },
+    {
+      "id": 19988,
+      "source": "twitter",
+      "title": "Announcing the final 24hrs of Q-Naifu's free test on Telegram! 🚨🚨\n\nIf you've never spoken with an unrestricted/uncensored LLM before, give it a shot! https://t.co/yk5X8UAaii \n\nQ-Naifu will be availabl",
+      "source_url": "https://x.com/imgn_ai/status/2063385034862534862",
+      "author": "@imgn_ai",
+      "published_at": "2026-06-06T22:18:22+00:00",
+      "score": 4,
+      "tool_name": "Q-Naifu",
+      "normalized_brand": "Q-Naifu",
+      "deal_type": "free_trial",
+      "deal_url": "https://t.co/yk5X8UAaii",
+      "discount_percent": null,
+      "discount_amount": null,
+      "discount_code": null,
+      "price_info": null,
+      "free_tier_details": null,
+      "free_trial_details": "free test on Telegram, final 24 hours",
+      "free_api_credits": null,
+      "how_to_claim": "Visit the provided link to access the free test on Telegram",
+      "expiry": "24 hours from announcement",
+      "summary": "Final 24 hours to try Q-Naifu's unrestricted LLM for free on Telegram",
+      "is_ai_model": true,
+      "model_provider": "other",
+      "verification_status": "verified",
+      "verified_at": "2026-06-06T23:02:12.612566+00:00",
+      "verification_evidence": "Page content confirms Q-Naifu is a free Telegram bot with unrestricted LLM access, matching the deal summary. No mention of trial expiration or pricing."
     },
     {
       "id": 19916,
