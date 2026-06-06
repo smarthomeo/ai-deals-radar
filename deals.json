@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T15:06:01.420392+00:00",
-  "total": 196,
+  "generated_at": "2026-06-06T16:08:53.416503+00:00",
+  "total": 200,
   "window_days": 90,
   "deals": [
     {
@@ -758,6 +758,118 @@
       "verification_status": "suspicious",
       "verified_at": "2026-06-06T12:16:02.403958+00:00",
       "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter), with no mention of Cursor Pro, student deals, or any relevant pricing information. The provided content appears to be unrelated to the deal."
+    },
+    {
+      "id": 19570,
+      "source": "twitter",
+      "title": "🍎Lifetime: $199 → $99🍎\n\nLevel Up Your Life with My Better Life 🚀\nThe Ultimate AI-Powered Life Organizer & Gamified Habit Tracker.\n\nStop just \"managing\" your time and start winning at life. My Better L",
+      "source_url": "https://x.com/indieappsanta/status/2063289822828200417",
+      "author": "@indieappsanta",
+      "published_at": "2026-06-06T16:00:02+00:00",
+      "score": 4,
+      "tool_name": "My Better Life",
+      "normalized_brand": "My Better Life",
+      "deal_type": "lifetime_deal",
+      "deal_url": "https://x.com/indieappsanta/status/2063289822828200417",
+      "discount_percent": null,
+      "discount_amount": "$99.99",
+      "discount_code": null,
+      "price_info": "Lifetime: $199 → $99.99 (One-time payment)",
+      "free_tier_details": null,
+      "free_trial_details": null,
+      "free_api_credits": null,
+      "how_to_claim": "Download My Better Life in the App Store now",
+      "expiry": null,
+      "summary": "Get lifetime access to My Better Life for a one-time payment of $99.99 (originally $199).",
+      "is_ai_model": false,
+      "model_provider": null,
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:04:02.017276+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for a generic website (x.com) with no mention of 'My Better Life', lifetime deals, or pricing. No relevant deal information found."
+    },
+    {
+      "id": 19588,
+      "source": "twitter",
+      "title": "AI agents need live web context.\n\nBut raw HTML is noisy, expensive, and painful to parse.\n\nAnyCrawler gives agents one API to:\n- search the web\n- crawl live pages\n- render JS-heavy sites\n- capture scr",
+      "source_url": "https://x.com/anycrawler/status/2063286765839094055",
+      "author": "@anycrawler",
+      "published_at": "2026-06-06T15:47:53+00:00",
+      "score": 4,
+      "tool_name": "AnyCrawler",
+      "normalized_brand": "AnyCrawler",
+      "deal_type": "free_api_credits",
+      "deal_url": "https://x.com/anycrawler/status/2063286765839094055",
+      "discount_percent": null,
+      "discount_amount": null,
+      "discount_code": null,
+      "price_info": null,
+      "free_tier_details": null,
+      "free_trial_details": null,
+      "free_api_credits": "10,000 free credits",
+      "how_to_claim": "",
+      "expiry": null,
+      "summary": "Start with 10,000 free credits for AnyCrawler API.",
+      "is_ai_model": false,
+      "model_provider": null,
+      "verification_status": "expired",
+      "verified_at": "2026-06-06T16:03:57.506461+00:00",
+      "verification_evidence": "URL dead: Server error 500"
+    },
+    {
+      "id": 19595,
+      "source": "twitter",
+      "title": "NVIDIA IS GIVING YOU 120 FREE AI MODELS FOR AN ENTIRE YEAR \n\nJust grab a free API key from the NVIDIA developer site and get 40 requests per minute at zero cost.\n https://t.co/5MrP23OUcU",
+      "source_url": "https://x.com/aiseomastery/status/2063284780658020755",
+      "author": "@aiseomastery",
+      "published_at": "2026-06-06T15:40:00+00:00",
+      "score": 4,
+      "tool_name": "NVIDIA AI Models",
+      "normalized_brand": "NVIDIA",
+      "deal_type": "free_api_credits",
+      "deal_url": "https://t.co/5MrP23OUcU",
+      "discount_percent": null,
+      "discount_amount": null,
+      "discount_code": null,
+      "price_info": null,
+      "free_tier_details": "120 free AI models for an entire year with 40 requests per minute at zero cost",
+      "free_trial_details": null,
+      "free_api_credits": "120 free AI models for a year, 40 requests per minute",
+      "how_to_claim": "Grab a free API key from the NVIDIA developer site",
+      "expiry": null,
+      "summary": "Get 120 free NVIDIA AI models for a year with 40 requests per minute by grabbing a free API key.",
+      "is_ai_model": true,
+      "model_provider": "other",
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:03:54.452750+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter) and basic CSS, with no mention of NVIDIA AI models, free API credits, or any related deal information."
+    },
+    {
+      "id": 19607,
+      "source": "twitter_account",
+      "title": "RT @israfill: Openai giving $50,000 in FREE API credits and it's hidden in your account settings 😳\n\nmost people have no idea this exists\n\nwhat you get every single day:\n- 250K tokens/day for GPT-5.5 a",
+      "source_url": "https://x.com/israfill/status/2063282131749777746",
+      "author": "@israfill",
+      "published_at": "2026-06-06T15:29:28+00:00",
+      "score": 4,
+      "tool_name": "OpenAI API",
+      "normalized_brand": "OpenAI",
+      "deal_type": "free_api_credits",
+      "deal_url": "https://x.com/israfill/status/2063282131749777746",
+      "discount_percent": null,
+      "discount_amount": null,
+      "discount_code": null,
+      "price_info": null,
+      "free_tier_details": "250K tokens/day for GPT-5.5 and GPT-5.2, 2.5M tokens/day for GPT-5.1-Mini and GPT-5-Nano, up to 10M tokens/day for tier 3-5",
+      "free_trial_details": null,
+      "free_api_credits": "$50,000 in free API credits, daily reset (250K-10M tokens/day depending on tier)",
+      "how_to_claim": "Go to account settings, click data controls → sharing, opt in to both options, ensure positive account balance",
+      "expiry": null,
+      "summary": "Claim free daily API credits from OpenAI by opting into data sharing program",
+      "is_ai_model": true,
+      "model_provider": "OpenAI",
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:03:42.079748+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for a search action on x.com (Twitter), with no mention of OpenAI, API credits, free tiers, or any related deal information."
     },
     {
       "id": 19535,
@@ -2883,9 +2995,9 @@
       "summary": "Start a 7-day free trial of 6/6 for agent connectivity.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:05:00.614492+00:00",
+      "verification_evidence": "Could not scrape page content"
     },
     {
       "id": 15945,
@@ -2911,9 +3023,9 @@
       "summary": "Claim 500,000 free credits on AINFT to access Claude Opus 4.8",
       "is_ai_model": true,
       "model_provider": "Anthropic",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:04:55.953414+00:00",
+      "verification_evidence": "Page content only shows a generic schema.org JSON-LD for X.com (Twitter) with no mention of AINFT, free credits, or any deal-related information. The provided content appears to be a snippet of a search page or unrelated metadata."
     },
     {
       "id": 16352,
@@ -2967,9 +3079,9 @@
       "summary": "DeepSeek made its 75% API price cut permanent.",
       "is_ai_model": true,
       "model_provider": "DeepSeek",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:04:50.878072+00:00",
+      "verification_evidence": "Page content only shows a generic X.com (Twitter) search schema and basic HTML/CSS, with no mention of DeepSeek API, price cuts, or any related deal information."
     },
     {
       "id": 15996,
@@ -2995,9 +3107,9 @@
       "summary": "DeepSeek makes 75% API price cut permanent",
       "is_ai_model": true,
       "model_provider": "DeepSeek",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:04:40.869362+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter) and basic CSS, with no mention of DeepSeek API, price cuts, or any deal information."
     },
     {
       "id": 16000,
@@ -3023,9 +3135,9 @@
       "summary": "DeepSeek made its 75% API price cut permanent.",
       "is_ai_model": true,
       "model_provider": "DeepSeek",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:04:47.166759+00:00",
+      "verification_evidence": "The provided page content is only a generic schema.org JSON-LD snippet for a search action on x.com (Twitter), with no mention of DeepSeek, API pricing, or any deal information. The content appears truncated or unrelated to the claimed deal."
     },
     {
       "id": 16012,
@@ -3051,9 +3163,9 @@
       "summary": "Xiaomi permanently cut Mimo V2.5 API pricing by up to 99%, making it significantly cheaper for AI workflows.",
       "is_ai_model": true,
       "model_provider": "other",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "expired",
+      "verified_at": "2026-06-06T16:04:33.390977+00:00",
+      "verification_evidence": "URL dead: Server error 503"
     },
     {
       "id": 17016,
@@ -3807,9 +3919,9 @@
       "summary": "Get $100 in free credits for Seltz search API for AI agents",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:04:24.027004+00:00",
+      "verification_evidence": "The page content appears to be a generic login or console page with no mention of Seltz, free credits, or any deal information. The content is mostly JavaScript and CSS references, with no visible deal details."
     },
     {
       "id": 17340,
@@ -3863,9 +3975,9 @@
       "summary": "Use Ko-fi's free tier to sell digital products with 0% platform fee, only paying standard payment processing.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:05:04.868469+00:00",
+      "verification_evidence": "Page content appears to be a generic schema.org JSON-LD snippet for a search action on x.com (Twitter), with no mention of Ko-fi, free tier, or any deal-related information. The provided content does not match the deal description."
     },
     {
       "id": 19438,
@@ -3891,9 +4003,9 @@
       "summary": "NVIDIA offers 46 AI models free with 40 requests/minute rate limit",
       "is_ai_model": true,
       "model_provider": "other",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:05:16.694525+00:00",
+      "verification_evidence": "Page content appears to be a generic schema.org JSON-LD snippet for a search website (x.com), with no mention of NVIDIA AI models, free tiers, or any related deal information."
     },
     {
       "id": 19461,
@@ -3919,9 +4031,9 @@
       "summary": "50% off API pricing for MiniMax M3 during current promotional window",
       "is_ai_model": true,
       "model_provider": "other",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:05:10.666636+00:00",
+      "verification_evidence": "Page content only shows generic schema.org metadata for X.com (Twitter) and no mention of MiniMax M3, API pricing, or any discount promotion."
     },
     {
       "id": 19317,
@@ -3947,9 +4059,9 @@
       "summary": "Ai Command Centre offers a free tier with scalable pricing up to $49/month based on features.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:05:24.617811+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter) search functionality, with no mention of Ai Command Centre, free tiers, pricing, or any related deal information."
     },
     {
       "id": 19336,
@@ -3975,9 +4087,9 @@
       "summary": "MiniMax M3 API has a 50% off discount window for lower token pricing.",
       "is_ai_model": true,
       "model_provider": "other",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "expired",
+      "verified_at": "2026-06-06T16:05:18.086208+00:00",
+      "verification_evidence": "URL dead: 404 Not Found"
     },
     {
       "id": 19224,
@@ -4003,9 +4115,9 @@
       "summary": "Leonardo AI offers free daily credits and Playground AI has a generous free tier for image generation.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:05:48.670281+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter) search functionality, with no mention of NotebookLM, Leonardo AI, or Playground AI deals, free tiers, or credits."
     },
     {
       "id": 19233,
@@ -4031,9 +4143,9 @@
       "summary": "ZeroThink offers a free tier (OpenZero) for its quantum-inspired AI platform via TalkToAI",
       "is_ai_model": true,
       "model_provider": "other",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:05:43.353805+00:00",
+      "verification_evidence": "Page content only shows a generic X.com (Twitter) search schema and basic CSS, with no mention of ZeroThink, OpenZero, quantum-inspired AI, or any free tier offer."
     },
     {
       "id": 19232,
@@ -4059,9 +4171,9 @@
       "summary": "Free tier with no card required for Lemmebuyit_ AI shopping platform",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:05:36.050516+00:00",
+      "verification_evidence": "Page content appears to be a generic schema for X.com (Twitter) search functionality, with no mention of Lemmebuyit_, AI shopping, free tiers, or any related deal information."
     },
     {
       "id": 19199,
@@ -4087,9 +4199,9 @@
       "summary": "Get 50% discount on NanoGPT Batch API for high-volume async chat completions",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:05:54.508997+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter) and basic CSS, with no mention of NanoGPT, Batch API, or any discount deal."
     },
     {
       "id": 19278,
@@ -4115,9 +4227,9 @@
       "summary": "Try DraftPilot for free to generate business proposals in seconds.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:05:29.121649+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for a search action on x.com (Twitter), with no mention of DraftPilot, free trials, or any deal-related information."
     },
     {
       "id": 19049,
@@ -4143,9 +4255,9 @@
       "summary": "Get 100 free scans of AEVRIS agent action firewall, no credit card required.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:05:59.239509+00:00",
+      "verification_evidence": "Page content only shows generic schema.org metadata for x.com (Twitter) and basic CSS, with no mention of AEVRIS, free scans, or any related deal information."
     },
     {
       "id": 18826,
@@ -4171,9 +4283,9 @@
       "summary": "Multiple promo codes: 15% off Stamp_seed, hodlwithLe, Sat123; 0.25% off first loan at hodlwithLe; 20% off Miami event tickets.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:06:29.181786+00:00",
+      "verification_evidence": "Page content only shows a generic schema.org website structure for x.com with no mention of the tool, promo codes, or any deal details. The provided content is incomplete and does not match the deal summary."
     },
     {
       "id": 18898,
@@ -4199,9 +4311,9 @@
       "summary": "AI Profit Boardroom membership at $59/month with $50K+ bonuses for 16 hours",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:06:25.145245+00:00",
+      "verification_evidence": "Page content only contains generic schema.org metadata for X.com (Twitter) and basic CSS, with no mention of AI Profit Boardroom, pricing, or any deal details."
     },
     {
       "id": 18935,
@@ -4227,9 +4339,9 @@
       "summary": "Save 40% and get free shipping on selected books from IVP with code IVPTECH26",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:06:16.859718+00:00",
+      "verification_evidence": "Page content only shows generic schema.org metadata for x.com (Twitter) and no mention of IVP, books, promo codes, or the deal details."
     },
     {
       "id": 18936,
@@ -4255,9 +4367,9 @@
       "summary": "HiveCode offers a free tier with 15+ Discord bot modules including AI tickets and giveaways",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:06:11.913374+00:00",
+      "verification_evidence": "Page content only shows a generic schema.org JSON-LD for a search website (x.com) with no mention of HiveCode, Discord bots, or any deal details."
     },
     {
       "id": 18958,
@@ -4283,9 +4395,9 @@
       "summary": "Tight Studio 3.0 offers a generous free tier with core screen recording features",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:06:06.961244+00:00",
+      "verification_evidence": "Page content only shows a generic schema.org JSON-LD for a search action on x.com (Twitter), with no mention of Tight Studio 3.0, free tier, or any related deal information."
     },
     {
       "id": 18450,
@@ -4311,9 +4423,9 @@
       "summary": "33% off SEO package plus free months on bundles",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:07:03.267555+00:00",
+      "verification_evidence": "Page content only shows a generic schema.org website structure for X.com with no mention of SEO packages, discounts, or deals. No pricing or promotional information found."
     },
     {
       "id": 18582,
@@ -4339,9 +4451,9 @@
       "summary": "Get 33% off full-service SEO package plus free months when you buy a bundle",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:06:58.669832+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for a search function on x.com, with no mention of SEO packages, discounts, or any deal-related information."
     },
     {
       "id": 18671,
@@ -4367,9 +4479,9 @@
       "summary": "30% discount on Visora AI",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:06:50.343156+00:00",
+      "verification_evidence": "Page content only shows generic schema.org metadata for x.com (Twitter) and basic CSS, with no mention of Visora AI, any discount, or deal-related information."
     },
     {
       "id": 18676,
@@ -4395,9 +4507,9 @@
       "summary": "Get 1,000 free credits for Velma, a voice model that detects tone and emotion from raw audio.",
       "is_ai_model": true,
       "model_provider": "other",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:06:47.130642+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter) and basic CSS, with no mention of Velma, free credits, or any deal-related information."
     },
     {
       "id": 18249,
@@ -4423,9 +4535,9 @@
       "summary": "Enter Creality M1 & R1 Maker Day Giveaway for a chance to win a HEPA Filter + 3D Printer Tool Wrap Kit Pro.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:07:57.756963+00:00",
+      "verification_evidence": "Page content only shows generic schema.org metadata for x.com (Twitter) and does not contain any mention of Creality M1 & R1, giveaway, or related deal information."
     },
     {
       "id": 18278,
@@ -4451,9 +4563,9 @@
       "summary": "Get 30 free daily credits for Surf Skill, a crypto data integration for Claude Code, Cursor, and Codex.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:07:53.804630+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter) and basic CSS, with no mention of Surf Skill, crypto data integration, or free daily credits. The deal info appears unrelated to the provided page content."
     },
     {
       "id": 18342,
@@ -4479,9 +4591,9 @@
       "summary": "Get the 15-Minute AI Micro-SaaS Launchpad for $69 this weekend to quickly build and monetize AI micro-SaaS products.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:07:46.431937+00:00",
+      "verification_evidence": "Page content only shows generic schema.org metadata for a search function on x.com, with no mention of the 15-Minute AI Micro-SaaS Launchpad, pricing, or any deal details."
     },
     {
       "id": 18365,
@@ -4507,9 +4619,9 @@
       "summary": "GitHub Copilot now offers a free tier for AI coding assistance",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "expired",
+      "verified_at": "2026-06-06T16:07:36.570696+00:00",
+      "verification_evidence": "URL dead: HTTPSConnectionPool(host='aitoolvillageb.com', port=443): Max retries exceeded with url: /copilot (C"
     },
     {
       "id": 18370,
@@ -4535,9 +4647,9 @@
       "summary": "DevLaws offers a free tier to enforce engineering standards in AI-generated code",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:07:41.066472+00:00",
+      "verification_evidence": "Page content only shows a generic X.com (Twitter) search schema and basic CSS, with no mention of DevLaws, free tier, or any related deal information."
     },
     {
       "id": 18378,
@@ -4563,9 +4675,9 @@
       "summary": "Win 1 free ticket to SuperAI Singapore by following, reposting, and commenting.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:07:28.998063+00:00",
+      "verification_evidence": "Page content only shows generic X.com schema and CSS, with no mention of SuperAI Singapore, giveaway, or any related deal details."
     },
     {
       "id": 18399,
@@ -4591,9 +4703,9 @@
       "summary": "Microsoft launched MAI-Image-2.5, a new image AI model, available for free testing in the Microsoft playground.",
       "is_ai_model": true,
       "model_provider": "other",
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:07:19.129663+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for a search action on x.com (Twitter), with no mention of MAI-Image-2.5, Microsoft, or any AI model launch."
     },
     {
       "id": 18412,
@@ -4619,9 +4731,9 @@
       "summary": "Get 20% off AutoYT, an AI tool that automates YouTube lead generation, by commenting 'AUTOYT'.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:07:14.019584+00:00",
+      "verification_evidence": "Page content only shows a generic schema for X.com (Twitter) search functionality, with no mention of AutoYT, promo codes, discounts, or any related deal information."
     },
     {
       "id": 18146,
@@ -4647,9 +4759,9 @@
       "summary": "Get 200 free daily credits for EasyClaw AI agent builder, plus 5% off with code MJLH8QY7.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:08:27.190996+00:00",
+      "verification_evidence": "The page content provided is only CSS and styling code, with no visible text, pricing, or deal information. It does not mention EasyClaw, free credits, or the discount code MJLH8QY7."
     },
     {
       "id": 18157,
@@ -4675,9 +4787,9 @@
       "summary": "SpedaxAI offers a free plan with 100 credits to build AI agents.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:08:23.035697+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for x.com (Twitter) and basic CSS, with no mention of SpedaxAI, free plans, credits, or any deal information."
     },
     {
       "id": 18209,
@@ -4703,9 +4815,9 @@
       "summary": "15% discount on architecture diagram workshop for digital members.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:08:11.349308+00:00",
+      "verification_evidence": "Page content only contains generic schema.org website markup for X.com (Twitter) with no mention of the tool, discount, or workshop. No relevant deal information found."
     },
     {
       "id": 18223,
@@ -4731,9 +4843,9 @@
       "summary": "Use promo code AWIGGY for a discount on ProxySeller proxies.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:08:06.795618+00:00",
+      "verification_evidence": "Page content only shows a generic schema.org JSON-LD for X.com (Twitter) with no mention of ProxySeller, promo codes, or any deal-related information. The provided content appears to be a snippet from a different website."
     },
     {
       "id": 17644,
@@ -5403,9 +5515,9 @@
       "summary": "Get 500,000 free credits on B.AI for multi-model AI access.",
       "is_ai_model": false,
       "model_provider": null,
-      "verification_status": "unverified",
-      "verified_at": "",
-      "verification_evidence": ""
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-06T16:06:33.388873+00:00",
+      "verification_evidence": "Could not scrape page content"
     },
     {
       "id": 17331,
