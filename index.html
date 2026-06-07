@@ -481,8 +481,8 @@ body {
     <option value="3">⭐⭐⭐ Score 3+</option>
   </select>
   <select class="filter-select" id="filter-sort">
+    <option value="newest">🕐 Latest First</option>
     <option value="score">Highest Score</option>
-    <option value="newest">Newest First</option>
     <option value="oldest">Oldest First</option>
   </select>
   <select class="filter-select" id="filter-verify">
@@ -512,7 +512,7 @@ body {
 const STATE = {
   deals: [],
   filtered: [],
-  filters: { search: '', source: '', type: '', score: 0, sort: 'score', verify: '' },
+  filters: { search: '', source: '', type: '', score: 0, sort: 'newest', verify: '' },
 };
 
 const BADGE_LABELS = {
