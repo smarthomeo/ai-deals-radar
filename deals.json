@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-07T01:03:07.318694+00:00",
-  "total": 219,
+  "generated_at": "2026-06-07T02:03:36.619799+00:00",
+  "total": 220,
   "window_days": 90,
   "deals": [
     {
@@ -758,6 +758,34 @@
       "verification_status": "suspicious",
       "verified_at": "2026-06-06T12:16:02.403958+00:00",
       "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter), with no mention of Cursor Pro, student deals, or any relevant pricing information. The provided content appears to be unrelated to the deal."
+    },
+    {
+      "id": 20104,
+      "source": "twitter_account",
+      "title": "RT @JulianGoldieSEO: 🔥 I SPENT HOURS BUILDING THIS… YOU GET IT FOR $0\n\nThis guide could easily sell for $199.\n\nInstead, I’m giving away my full N8N Automation Mastery system:\n\nInside you get:\n\n→ 50+ p",
+      "source_url": "https://x.com/JulianGoldieSEO/status/2063437987518820489",
+      "author": "@JulianGoldieSEO",
+      "published_at": "2026-06-07T01:48:47+00:00",
+      "score": 4,
+      "tool_name": "N8N Automation Mastery system",
+      "normalized_brand": "N8N",
+      "deal_type": "giveaway",
+      "deal_url": "https://x.com/JulianGoldieSEO/status/2063437987518820489",
+      "discount_percent": null,
+      "discount_amount": null,
+      "discount_code": null,
+      "price_info": "Could easily sell for $199, now free",
+      "free_tier_details": "Full N8N Automation Mastery system for free, including 50+ plug-and-play automation workflows, step-by-step course, and advanced AI prompts",
+      "free_trial_details": null,
+      "free_api_credits": null,
+      "how_to_claim": "Like and comment 'n8n' on the post to receive the system",
+      "expiry": null,
+      "summary": "Get the full N8N Automation Mastery system for free by liking and commenting 'n8n'",
+      "is_ai_model": false,
+      "model_provider": null,
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-07T02:03:24.585130+00:00",
+      "verification_evidence": "Page content only shows generic schema.org metadata for X.com (Twitter) and no mention of N8N Automation Mastery, giveaways, or the described deal."
     },
     {
       "id": 19988,
