@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-07T07:05:03.497257+00:00",
-  "total": 228,
+  "generated_at": "2026-06-07T08:04:48.990631+00:00",
+  "total": 229,
   "window_days": 90,
   "deals": [
     {
@@ -758,6 +758,34 @@
       "verification_status": "suspicious",
       "verified_at": "2026-06-06T12:16:02.403958+00:00",
       "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter), with no mention of Cursor Pro, student deals, or any relevant pricing information. The provided content appears to be unrelated to the deal."
+    },
+    {
+      "id": 20345,
+      "source": "twitter",
+      "title": "Nairobi-built for AI teams scaling fast.\nWhat’s the scariest agent cost story you’ve seen (or hidden)?\nDrop it below — or DM for early beta access. First 10 get lifetime deal.\n#AIAgents #FinOps #AI #B",
+      "source_url": "https://x.com/GoldRayson/status/2063523849946509497",
+      "author": "@GoldRayson",
+      "published_at": "2026-06-07T07:29:58+00:00",
+      "score": 4,
+      "tool_name": "Nairobi",
+      "normalized_brand": "Nairobi",
+      "deal_type": "lifetime_deal",
+      "deal_url": "https://x.com/GoldRayson/status/2063523849946509497",
+      "discount_percent": null,
+      "discount_amount": null,
+      "discount_code": null,
+      "price_info": null,
+      "free_tier_details": null,
+      "free_trial_details": null,
+      "free_api_credits": null,
+      "how_to_claim": "DM for early beta access. First 10 get lifetime deal.",
+      "expiry": null,
+      "summary": "First 10 to DM get lifetime deal for Nairobi AI tool.",
+      "is_ai_model": false,
+      "model_provider": null,
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-07T08:04:07.343466+00:00",
+      "verification_evidence": "Page content only shows generic X.com (Twitter) website schema and CSS, with no mention of Nairobi AI tool, lifetime deal, or any related offer. The deal info appears to be from a social media post (DM for deal), but the provided page content does not support it."
     },
     {
       "id": 20309,
