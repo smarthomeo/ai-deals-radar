@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T23:02:45.079250+00:00",
-  "total": 218,
+  "generated_at": "2026-06-07T00:02:30.169761+00:00",
+  "total": 219,
   "window_days": 90,
   "deals": [
     {
@@ -4342,6 +4342,34 @@
       "verification_status": "suspicious",
       "verified_at": "2026-06-06T14:05:58.660051+00:00",
       "verification_evidence": "Page content only shows a generic schema.org search action for x.com (Twitter), with no mention of MiniMax, promo codes, discounts, or API vouchers. The deal info appears unrelated to the provided page content."
+    },
+    {
+      "id": 20013,
+      "source": "twitter",
+      "title": "Free tier — forever. No credit card. No account required.\n\nCheck if your iPhone is AI-ready:\nhttps://t.co/aB1LW2Ph7k\n\nFull environment:\nhttps://t.co/Ut0fGQK8RH",
+      "source_url": "https://x.com/BodyOptometrist/status/2063402308545773983",
+      "author": "@BodyOptometrist",
+      "published_at": "2026-06-06T23:27:01+00:00",
+      "score": 3,
+      "tool_name": "iPhone AI Readiness Checker",
+      "normalized_brand": "iPhone AI Readiness Checker",
+      "deal_type": "free_tier",
+      "deal_url": "https://t.co/aB1LW2Ph7k",
+      "discount_percent": null,
+      "discount_amount": null,
+      "discount_code": null,
+      "price_info": null,
+      "free_tier_details": "Free tier forever, no credit card, no account required",
+      "free_trial_details": null,
+      "free_api_credits": null,
+      "how_to_claim": "Visit the provided URL to check iPhone AI readiness",
+      "expiry": null,
+      "summary": "Check if your iPhone is AI-ready with a free forever tier, no account needed",
+      "is_ai_model": false,
+      "model_provider": null,
+      "verification_status": "verified",
+      "verified_at": "2026-06-07T00:01:52.873851+00:00",
+      "verification_evidence": "Page shows a free iPhone AI readiness checker tool with a 'Free tier forever' mention, no account or credit card required, matching the deal description. No pricing or discount codes are displayed."
     },
     {
       "id": 19747,
