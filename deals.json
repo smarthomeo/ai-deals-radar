@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-07T02:03:36.619799+00:00",
-  "total": 220,
+  "generated_at": "2026-06-07T03:03:16.359234+00:00",
+  "total": 221,
   "window_days": 90,
   "deals": [
     {
@@ -898,6 +898,34 @@
       "verification_status": "suspicious",
       "verified_at": "2026-06-06T21:02:42.050842+00:00",
       "verification_evidence": "Page content only shows a generic schema.org JSON-LD for a search action on x.com (Twitter), with no mention of Hermes Studio, API credits, or any related deal information."
+    },
+    {
+      "id": 20186,
+      "source": "twitter_account",
+      "title": "20 AI models. FREE for a year. no credit card.\n\nHermes Studio already has NVIDIA preset as the base_url - so all you need is a FREE API key and you're running 120+ models instantly\n\nhere's the setup:\n",
+      "source_url": "https://x.com/InduTripat82427/status/2063360610776330731",
+      "author": "@InduTripat82427",
+      "published_at": "2026-06-06T20:41:19+00:00",
+      "score": 4,
+      "tool_name": "Hermes Studio",
+      "normalized_brand": "Hermes Studio",
+      "deal_type": "free_api_credits",
+      "deal_url": "https://x.com/InduTripat82427/status/2063360610776330731",
+      "discount_percent": null,
+      "discount_amount": null,
+      "discount_code": null,
+      "price_info": null,
+      "free_tier_details": "120+ models, 40 requests per minute, free for a full year",
+      "free_trial_details": null,
+      "free_api_credits": "Free API key for 120+ models, 40 requests per minute, valid for one year",
+      "how_to_claim": "1/ go to Hermes Studio, 2/ register, log in, bind your phone number, 3/ grab your API key, 4/ drop it into Hermes Studio",
+      "expiry": null,
+      "summary": "Get a free API key for 120+ AI models with 40 requests per minute for one year",
+      "is_ai_model": false,
+      "model_provider": null,
+      "verification_status": "suspicious",
+      "verified_at": "2026-06-07T03:03:03.652827+00:00",
+      "verification_evidence": "Page content only shows schema.org metadata for X.com (Twitter) and basic CSS, with no mention of Hermes Studio, API credits, or any deal information."
     },
     {
       "id": 19889,
