@@ -1,778 +1,1785 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Deals Radar</title>
+<title>AI Deals Radar — Discover AI Tool Deals</title>
+<meta name="description" content="Curated AI tool deals, free tiers, lifetime deals, discounts and promo codes. Updated daily from Twitter, YouTube, Hacker News and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
 :root {
-  --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
-  --bg-card: #1e293b;
-  --bg-card-hover: #263548;
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --border: #334155;
-  --accent: #3b82f6;
-  --accent-hover: #2563eb;
-  --green: #22c55e;
-  --orange: #f97316;
-  --blue: #3b82f6;
-  --purple: #a855f7;
-  --red: #ef4444;
-  --yellow: #eab308;
+  --bg: #0a0a0f;
+  --bg-elevated: #12121a;
+  --bg-card: rgba(255,255,255,0.03);
+  --bg-card-hover: rgba(255,255,255,0.06);
+  --bg-input: rgba(255,255,255,0.04);
+  --bg-chip: rgba(255,255,255,0.05);
+  --bg-chip-active: rgba(99,102,241,0.2);
+  --border: rgba(255,255,255,0.06);
+  --border-hover: rgba(255,255,255,0.12);
+  --text: #e8e8ed;
+  --text-secondary: #8b8b9e;
+  --text-muted: #555566;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+  --accent-glow: rgba(99,102,241,0.15);
+  --success: #10b981;
+  --success-bg: rgba(16,185,129,0.12);
+  --warning: #f59e0b;
+  --warning-bg: rgba(245,158,11,0.12);
+  --danger: #ef4444;
+  --danger-bg: rgba(239,68,68,0.12);
+  --info: #3b82f6;
+  --info-bg: rgba(59,130,246,0.12);
   --radius: 12px;
-  --shadow: 0 4px 6px -1px rgba(0,0,0,0.3);
+  --radius-sm: 8px;
+  --radius-xs: 6px;
+  --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.2);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.4);
+  --blur: 20px;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
 }
+
+[data-theme="light"] {
+  --bg: #f8f9fc;
+  --bg-elevated: #ffffff;
+  --bg-card: rgba(0,0,0,0.02);
+  --bg-card-hover: rgba(0,0,0,0.04);
+  --bg-input: rgba(0,0,0,0.03);
+  --bg-chip: rgba(0,0,0,0.04);
+  --bg-chip-active: rgba(99,102,241,0.12);
+  --border: rgba(0,0,0,0.08);
+  --border-hover: rgba(0,0,0,0.15);
+  --text: #1a1a2e;
+  --text-secondary: #6b6b80;
+  --text-muted: #999aaa;
+  --accent-glow: rgba(99,102,241,0.08);
+  --shadow: 0 1px 2px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.06);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+html { scroll-behavior: smooth; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-  background: var(--bg-primary);
-  color: var(--text-primary);
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Header */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% -20%, rgba(99,102,241,0.08), transparent),
+              radial-gradient(ellipse 60% 40% at 80% 80%, rgba(16,185,129,0.04), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ============ HEADER ============ */
 .header {
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  border-bottom: 1px solid var(--border);
-  padding: 1.5rem 2rem;
   position: sticky;
   top: 0;
   z-index: 100;
-  backdrop-filter: blur(10px);
+  background: rgba(10,10,15,0.8);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  border-bottom: 1px solid var(--border);
 }
 
+[data-theme="light"] .header { background: rgba(248,249,252,0.85); }
+
 .header-inner {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0.75rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.6rem;
+  text-decoration: none;
+  flex-shrink: 0;
 }
 
-.logo-icon { font-size: 1.75rem; }
-
-.logo h1 {
-  font-size: 1.5rem;
+.logo-mark {
+  width: 32px; height: 32px;
+  background: linear-gradient(135deg, var(--accent), #a855f7);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: white;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--accent), #60a5fa);
+}
+
+.logo-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-icon {
+  width: 36px; height: 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+.btn-icon:hover { border-color: var(--border-hover); color: var(--text); background: var(--bg-card-hover); }
+
+.stats-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+}
+
+.stat-num {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  color: var(--text-muted);
+}
+
+/* ============ HERO ============ */
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 1rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--text) 0%, var(--text-secondary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.header-stats {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.85rem;
+.hero p {
   color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.stat-value { color: var(--text-primary); font-weight: 600; }
+/* ============ CATEGORY TABS ============ */
+.tabs-wrap {
+  position: sticky;
+  top: 57px;
+  z-index: 90;
+  background: rgba(10,10,15,0.85);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  border-bottom: 1px solid var(--border);
+}
 
-/* Controls */
-.controls {
-  max-width: 1400px;
-  margin: 1.5rem auto;
-  padding: 0 2rem;
+[data-theme="light"] .tabs-wrap { background: rgba(248,249,252,0.9); }
+
+.tabs-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.tabs-inner::-webkit-scrollbar { display: none; }
+
+.tab-chip {
+  display: inline-flex;
   align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-chip);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  user-select: none;
 }
 
-.search-box {
-  flex: 1;
-  min-width: 250px;
+.tab-chip:hover {
+  border-color: var(--border-hover);
+  color: var(--text);
+}
+
+.tab-chip.active {
+  background: var(--bg-chip-active);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tab-count {
+  font-size: 0.7rem;
+  background: rgba(255,255,255,0.08);
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+[data-theme="light"] .tab-count { background: rgba(0,0,0,0.06); }
+
+.tab-chip.active .tab-count { background: rgba(99,102,241,0.2); color: var(--accent); }
+
+/* ============ MAIN LAYOUT ============ */
+.main-wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============ FILTER SIDEBAR ============ */
+.sidebar {
+  position: sticky;
+  top: 110px;
+  align-self: start;
+  max-height: calc(100vh - 130px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-right: 0.5rem;
+  scrollbar-width: thin;
+}
+
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+.filter-group {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.85rem;
+  backdrop-filter: blur(10px);
+}
+
+.filter-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.search-input-wrap {
   position: relative;
 }
 
-.search-box input {
+.search-input-wrap svg {
+  position: absolute;
+  left: 0.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px; height: 14px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.search-input {
   width: 100%;
-  padding: 0.75rem 1rem 0.75rem 2.75rem;
-  background: var(--bg-secondary);
+  padding: 0.55rem 0.7rem 0.55rem 2rem;
+  background: var(--bg-input);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  color: var(--text-primary);
-  font-size: 0.95rem;
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-family: var(--font);
   outline: none;
   transition: border-color 0.2s;
 }
 
-.search-box input:focus { border-color: var(--accent); }
+.search-input::placeholder { color: var(--text-muted); }
+.search-input:focus { border-color: var(--accent); }
 
-.search-box::before {
-  content: '🔍';
-  position: absolute;
-  left: 0.875rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.9rem;
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
 }
 
-.filter-select {
-  padding: 0.75rem 2.25rem 0.75rem 0.75rem;
-  background: var(--bg-secondary);
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  color: var(--text-primary);
-  font-size: 0.9rem;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--font);
+}
+
+.filter-chip:hover { border-color: var(--border-hover); color: var(--text); }
+.filter-chip.active { background: var(--bg-chip-active); border-color: var(--accent); color: var(--accent); }
+
+.score-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  outline: none;
+  margin: 0.5rem 0 0.3rem;
+}
+
+.score-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.score-slider::-moz-range-thumb {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+  border: 2px solid var(--bg);
+}
+
+.score-val {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.sort-select {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-family: var(--font);
   outline: none;
   cursor: pointer;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2394a3b8' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
 }
 
-.filter-select:focus { border-color: var(--accent); }
+.sort-select:focus { border-color: var(--accent); }
 
-/* Grid */
-.grid {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2rem 3rem;
+.clear-btn {
+  width: 100%;
+  padding: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font);
+}
+
+.clear-btn:hover { border-color: var(--danger); color: var(--danger); }
+
+.active-filters-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0;
+  flex-wrap: wrap;
+}
+
+.result-count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.result-count strong { color: var(--text); }
+
+/* ============ DEAL GRID ============ */
+.deals-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 1rem;
 }
 
-/* Cards */
+/* ============ CARD ============ */
 .deal-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.25rem;
-  transition: all 0.2s ease;
+  padding: 1.1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.6rem;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.deal-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--card-accent, var(--accent)), transparent);
+  opacity: 0;
+  transition: opacity 0.25s;
 }
 
 .deal-card:hover {
+  border-color: var(--border-hover);
   background: var(--bg-card-hover);
-  border-color: var(--accent);
   box-shadow: var(--shadow);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
-.card-header {
+.deal-card:hover::before { opacity: 1; }
+
+.deal-card.expanded {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-lg), 0 0 0 1px var(--accent);
+}
+
+.card-top {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
-.card-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  line-height: 1.4;
+.card-badges {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
   flex: 1;
+  min-width: 0;
 }
 
-.card-title a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.card-title a:hover { color: var(--accent); }
-
-/* Badges */
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.25rem 0.65rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.badge-discount { background: rgba(34,197,94,0.15); color: var(--green); }
-.badge-free_tier { background: rgba(249,115,22,0.15); color: var(--orange); }
-.badge-launch { background: rgba(59,130,246,0.15); color: var(--blue); }
-.badge-lifetime { background: rgba(168,85,247,0.15); color: var(--purple); }
-.badge-promo_code { background: rgba(234,179,8,0.15); color: var(--yellow); }
-.badge-bypass { background: rgba(239,68,68,0.15); color: var(--red); }
-.badge-unknown { background: rgba(148,163,184,0.15); color: var(--text-secondary); }
-
-/* Verification badges */
-.verify-badge {
+.deal-type-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
   padding: 0.2rem 0.55rem;
   border-radius: 999px;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  white-space: nowrap;
 }
 
-.verify-verified { background: rgba(34,197,94,0.15); color: var(--green); }
-.verify-unverified { background: rgba(148,163,184,0.1); color: var(--text-muted); }
-.verify-suspicious { background: rgba(234,179,8,0.15); color: var(--yellow); }
-.verify-expired { background: rgba(239,68,68,0.15); color: var(--red); }
+.badge-free_tier { background: var(--success-bg); color: var(--success); }
+.badge-free_trial { background: rgba(6,182,212,0.12); color: #06b6d4; }
+.badge-free_api_credits { background: rgba(139,92,246,0.12); color: #8b5cf6; }
+.badge-discount { background: var(--info-bg); color: var(--info); }
+.badge-promo_code { background: var(--warning-bg); color: var(--warning); }
+.badge-lifetime_deal { background: rgba(236,72,153,0.12); color: #ec4899; }
+.badge-giveaway { background: rgba(34,197,94,0.12); color: #22c55e; }
+.badge-price_cut { background: rgba(251,146,60,0.12); color: #fb923c; }
+.badge-launch { background: rgba(59,130,246,0.12); color: #3b82f6; }
+.badge-twitter, .badge-twitter_account { background: rgba(148,163,184,0.1); color: var(--text-secondary); }
 
-.score-dots {
-  display: flex;
-  gap: 3px;
-  align-items: center;
-}
-
-.score-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--border);
-}
-
-.score-dot.filled { background: var(--accent); }
-
-/* Meta */
-.card-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.meta-tag {
+.verify-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
-  background: rgba(51,65,85,0.5);
-  padding: 0.15rem 0.5rem;
-  border-radius: 6px;
+  gap: 0.2rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
 }
 
-/* Deal info */
-.deal-info {
+.verify-verified { background: var(--success-bg); color: var(--success); }
+.verify-unverified { background: rgba(148,163,184,0.1); color: var(--text-muted); }
+.verify-suspicious { background: var(--warning-bg); color: var(--warning); }
+.verify-expired { background: var(--danger-bg); color: var(--danger); }
+
+.card-brand {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 0.4rem;
-  font-size: 0.875rem;
 }
 
-.deal-row {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
+.brand-logo {
+  width: 22px; height: 22px;
+  border-radius: var(--radius-xs);
+  flex-shrink: 0;
 }
 
-.deal-label {
-  color: var(--text-muted);
-  font-size: 0.8rem;
-  min-width: 70px;
-}
-
-.deal-value { color: var(--text-secondary); }
-
-.deal-value.highlight { color: var(--green); font-weight: 600; }
-
-.code-box {
-  display: inline-block;
-  background: rgba(59,130,246,0.1);
-  border: 1px solid rgba(59,130,246,0.3);
-  border-radius: 6px;
-  padding: 0.15rem 0.5rem;
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.85rem;
-  color: var(--accent);
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.code-box:hover { background: rgba(59,130,246,0.2); }
-
-.card-summary {
+.card-title {
   font-size: 0.85rem;
   color: var(--text-secondary);
-  line-height: 1.5;
-  border-left: 3px solid var(--border);
-  padding-left: 0.75rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
+
+.card-summary {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-deal-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.deal-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-xs);
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.deal-tag.discount { background: var(--success-bg); color: var(--success); }
+.deal-tag.price { background: var(--info-bg); color: var(--info); }
+.deal-tag.free { background: rgba(16,185,129,0.15); color: var(--success); }
+.deal-tag.credits { background: rgba(139,92,246,0.12); color: #8b5cf6; }
+.deal-tag.trial { background: rgba(6,182,212,0.12); color: #06b6d4; }
+
+.promo-code {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.6rem;
+  background: rgba(99,102,241,0.1);
+  border: 1px dashed rgba(99,102,241,0.3);
+  border-radius: var(--radius-xs);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.promo-code:hover { background: rgba(99,102,241,0.18); }
+.promo-code.copied { background: var(--success-bg); border-color: var(--success); color: var(--success); }
 
 .card-footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding-top: 0.5rem;
   border-top: 1px solid var(--border);
   margin-top: auto;
 }
 
 .card-source {
-  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
 }
 
-.card-date {
-  font-size: 0.8rem;
-  color: var(--text-muted);
+.source-icon { font-size: 0.85rem; }
+
+.score-bar {
+  display: flex;
+  gap: 3px;
+  align-items: center;
 }
 
-.deal-link {
-  display: inline-flex;
+.score-pip {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--border);
+  transition: background 0.2s;
+}
+
+.score-pip.filled { background: var(--accent); }
+
+.card-actions {
+  display: flex;
   align-items: center;
   gap: 0.35rem;
-  color: var(--accent);
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: color 0.2s;
 }
 
-.deal-link:hover { color: var(--accent-hover); text-decoration: underline; }
+.claim-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.7rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-xs);
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  font-family: var(--font);
+}
 
-/* Empty state */
+.claim-btn:hover { background: var(--accent-hover); transform: translateY(-1px); }
+
+.share-btn {
+  width: 28px; height: 28px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.15s;
+}
+
+.share-btn:hover { border-color: var(--border-hover); color: var(--text); }
+
+/* Card expand detail */
+.card-detail {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  animation: fadeSlideIn 0.25s ease;
+}
+
+.deal-card.expanded .card-detail { display: flex; }
+
+.detail-row {
+  display: flex;
+  gap: 0.5rem;
+  line-height: 1.4;
+}
+
+.detail-label {
+  color: var(--text-muted);
+  min-width: 80px;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.detail-value { color: var(--text-secondary); }
+.detail-value a { color: var(--accent); text-decoration: none; }
+.detail-value a:hover { text-decoration: underline; }
+
+.new-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.4rem;
+  background: var(--accent);
+  color: white;
+  border-radius: 999px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.expiring-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.4rem;
+  background: var(--warning);
+  color: #000;
+  border-radius: 999px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ============ SKELETON LOADING ============ */
+.skeleton-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skeleton-line {
+  height: 12px;
+  background: linear-gradient(90deg, var(--border) 25%, rgba(255,255,255,0.06) 50%, var(--border) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+.skeleton-line.w60 { width: 60%; }
+.skeleton-line.w80 { width: 80%; }
+.skeleton-line.w40 { width: 40%; height: 8px; }
+.skeleton-line.h20 { height: 20px; width: 50%; }
+.skeleton-circle { width: 28px; height: 28px; border-radius: 50%; }
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ============ EMPTY STATE ============ */
 .empty-state {
   grid-column: 1 / -1;
   text-align: center;
   padding: 4rem 2rem;
-  color: var(--text-muted);
 }
 
-.empty-state .emoji { font-size: 3rem; margin-bottom: 1rem; }
-.empty-state p { font-size: 1.1rem; }
+.empty-icon {
+  width: 64px; height: 64px;
+  margin: 0 auto 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
 
-/* Loading */
-.loading {
+.empty-state h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.35rem; }
+.empty-state p { color: var(--text-muted); font-size: 0.85rem; }
+
+/* ============ LOAD MORE ============ */
+.load-more-wrap {
   grid-column: 1 / -1;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 1rem;
+}
+
+.load-more-btn {
+  padding: 0.6rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
   color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font);
 }
 
-.spinner {
-  width: 40px;
-  height: 40px;
-  border: 3px solid var(--border);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-  margin: 0 auto 1rem;
+.load-more-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ============ TOAST ============ */
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 500;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(var(--blur));
 }
 
-@keyframes spin { to { transform: rotate(360deg); } }
+.toast.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
 
-/* Footer */
+/* ============ FOOTER ============ */
 .site-footer {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   text-align: center;
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   border-top: 1px solid var(--border);
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .header { padding: 1rem; }
-  .header-inner { flex-direction: column; align-items: flex-start; }
-  .controls { padding: 0 1rem; }
-  .grid { padding: 0 1rem 2rem; grid-template-columns: 1fr; }
-  .search-box { min-width: 100%; }
-}
-
-/* Scrollbar */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: var(--bg-primary); }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
-
-/* Toast */
-.toast {
+/* ============ BACK TO TOP ============ */
+.back-top {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background: var(--bg-secondary);
-  border: 1px solid var(--accent);
-  color: var(--text-primary);
-  padding: 0.75rem 1.25rem;
-  border-radius: var(--radius);
-  font-size: 0.9rem;
-  z-index: 1000;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-  pointer-events: none;
-}
-
-.toast.show {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-/* Back to top */
-.back-to-top {
-  position: fixed;
-  bottom: 2rem;
-  left: 2rem;
-  width: 44px;
-  height: 44px;
-  background: var(--bg-secondary);
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 40px; height: 40px;
+  background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 50%;
-  color: var(--text-primary);
-  font-size: 1.25rem;
-  cursor: pointer;
+  color: var(--text-secondary);
   display: none;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
   transition: all 0.2s;
   z-index: 100;
+  box-shadow: var(--shadow);
 }
 
-.back-to-top:hover { border-color: var(--accent); background: var(--bg-card-hover); }
-.back-to-top.visible { display: flex; }
+.back-top:hover { border-color: var(--accent); color: var(--accent); }
+.back-top.visible { display: flex; }
+
+/* ============ ANIMATIONS ============ */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.deal-card { animation: fadeSlideIn 0.3s ease both; }
+
+/* ============ MOBILE FILTER DRAWER ============ */
+.mobile-filter-btn {
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+.mobile-filter-btn svg { width: 14px; height: 14px; }
+
+.filter-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 200;
+}
+
+.filter-overlay.open { display: block; }
+
+.filter-drawer {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: 300px;
+  background: var(--bg-elevated);
+  border-right: 1px solid var(--border);
+  z-index: 201;
+  padding: 1rem;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.filter-overlay.open .filter-drawer { transform: translateX(0); }
+
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.drawer-header h3 { font-size: 1rem; font-weight: 600; }
+
+.drawer-close {
+  width: 32px; height: 32px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* ============ KEYBOARD HINT ============ */
+.kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1rem 0.35rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  min-width: 18px;
+}
+
+/* ============ SCROLL ANIMATIONS ============ */
+.deal-card {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.deal-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1024px) {
+  .main-wrap {
+    grid-template-columns: 1fr;
+  }
+  .sidebar { display: none; }
+  .mobile-filter-btn { display: inline-flex; }
+}
+
+@media (max-width: 768px) {
+  .header-inner { padding: 0.6rem 1rem; }
+  .stats-bar { display: none; }
+  .hero { padding: 1.5rem 1rem 0.5rem; }
+  .hero h2 { font-size: 1.3rem; }
+  .tabs-wrap { top: 49px; }
+  .tabs-inner { padding: 0.6rem 1rem; }
+  .main-wrap { padding: 0.75rem 1rem 2rem; }
+  .deals-grid { grid-template-columns: 1fr; }
+  .deal-card { padding: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+  .tab-chip { font-size: 0.72rem; padding: 0.35rem 0.7rem; }
+  .hero h2 { font-size: 1.15rem; }
+}
+
+/* ============ SCROLLBAR ============ */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
 </style>
 </head>
 <body>
 
+<!-- HEADER -->
 <header class="header">
   <div class="header-inner">
-    <div class="logo">
-      <span class="logo-icon">📡</span>
-      <h1>AI Deals Radar</h1>
+    <a class="logo" href="#">
+      <div class="logo-mark">AI</div>
+      <span class="logo-text">Deals Radar</span>
+    </a>
+    <div class="stats-bar" id="stats-bar">
+      <div class="stat-item"><span class="stat-num" id="stat-total">-</span><span class="stat-label">deals</span></div>
+      <div class="stat-item"><span class="stat-num" id="stat-tools">-</span><span class="stat-label">tools</span></div>
+      <div class="stat-item"><span class="stat-num" id="stat-verified">-</span><span class="stat-label">verified</span></div>
     </div>
-    <div class="header-stats" id="header-stats">
-      <span><span class="stat-value" id="total-deals">—</span> deals</span>
-      <span>Updated <span class="stat-value" id="last-updated">—</span></span>
+    <div class="header-actions">
+      <button class="btn-icon" id="theme-toggle" title="Toggle theme">
+        <span id="theme-icon">☀</span>
+      </button>
     </div>
   </div>
 </header>
 
-<div class="controls">
-  <div class="search-box">
-    <input type="text" id="search" placeholder="Search deals, tools, brands..." autocomplete="off">
+<!-- HERO -->
+<section class="hero">
+  <h2>Discover the Best AI Tool Deals</h2>
+  <p>Curated free tiers, discounts, lifetime deals & promo codes from across the web</p>
+</section>
+
+<!-- CATEGORY TABS -->
+<nav class="tabs-wrap">
+  <div class="tabs-inner" id="category-tabs"></div>
+</nav>
+
+<!-- MAIN -->
+<div class="main-wrap">
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="filter-group">
+      <div class="filter-label">Search</div>
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" class="search-input" id="search-input" placeholder="Tools, brands, deals..." autocomplete="off">
+        <span class="kbd" style="position:absolute;right:0.5rem;top:50%;transform:translateY(-50%)">/</span>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-label">Deal Type</div>
+      <div class="filter-chips" id="filter-type-chips"></div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-label">Source</div>
+      <div class="filter-chips" id="filter-source-chips"></div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-label">Minimum Score</div>
+      <input type="range" class="score-slider" id="score-slider" min="1" max="5" value="1" step="1">
+      <div class="score-val" id="score-val">Any score</div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-label">Verification</div>
+      <div class="filter-chips" id="filter-verify-chips"></div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-label">Price</div>
+      <div class="filter-chips" id="filter-price-chips"></div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-label">Expiry</div>
+      <div class="filter-chips" id="filter-expiry-chips"></div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-label">AI Model Deals</div>
+      <div class="filter-chips">
+        <button class="filter-chip" data-filter="ai_model" data-value="all">All</button>
+        <button class="filter-chip" data-filter="ai_model" data-value="true">🤖 Models Only</button>
+        <button class="filter-chip" data-filter="ai_model" data-value="false">🛠 Tools Only</button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-label">Sort By</div>
+      <select class="sort-select" id="sort-select">
+        <option value="newest">Latest First</option>
+        <option value="score">Highest Score</option>
+        <option value="expiring">Expiring Soon</option>
+      </select>
+    </div>
+
+    <button class="clear-btn" id="clear-filters">Clear All Filters</button>
+  </aside>
+
+  <!-- DEALS -->
+  <div>
+    <button class="mobile-filter-btn" id="mobile-filter-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>
+      Filters
+    </button>
+    <div class="active-filters-bar" id="active-filters"></div>
+    <div class="result-count" id="result-count"></div>
+    <div class="deals-grid" id="deals-grid"></div>
   </div>
-  <select class="filter-select" id="filter-source">
-    <option value="">All Sources</option>
-  </select>
-  <select class="filter-select" id="filter-type">
-    <option value="">All Types</option>
-  </select>
-  <select class="filter-select" id="filter-score">
-    <option value="">Any Score</option>
-    <option value="5">⭐⭐⭐⭐⭐ Score 5</option>
-    <option value="4">⭐⭐⭐⭐ Score 4+</option>
-    <option value="3">⭐⭐⭐ Score 3+</option>
-  </select>
-  <select class="filter-select" id="filter-sort">
-    <option value="newest">🕐 Latest First</option>
-    <option value="score">Highest Score</option>
-    <option value="oldest">Oldest First</option>
-  </select>
-  <select class="filter-select" id="filter-verify">
-    <option value="">All Verification</option>
-    <option value="verified">✅ Verified</option>
-    <option value="unverified">⏳ Unverified</option>
-    <option value="suspicious">⚠️ Suspicious</option>
-    <option value="expired">❌ Expired</option>
-  </select>
 </div>
 
-<main class="grid" id="deals-grid">
-  <div class="loading">
-    <div class="spinner"></div>
-    <p>Loading deals...</p>
+<!-- FILTER DRAWER (mobile) -->
+<div class="filter-overlay" id="filter-overlay">
+  <div class="filter-drawer" id="filter-drawer">
+    <div class="drawer-header">
+      <h3>Filters</h3>
+      <button class="drawer-close" id="drawer-close">&times;</button>
+    </div>
+    <div id="drawer-filters"></div>
   </div>
-</main>
+</div>
 
-<footer class="site-footer">
-  AI Deals Radar — Auto-updated every hour from 5+ sources
-</footer>
-
+<!-- TOAST -->
 <div class="toast" id="toast"></div>
-<button class="back-to-top" id="back-to-top" title="Back to top">↑</button>
+<button class="back-top" id="back-top" title="Back to top">&uarr;</button>
+
+<footer class="site-footer">AI Deals Radar — Auto-updated from Twitter, YouTube, Hacker News &amp; more</footer>
 
 <script>
-const STATE = {
-  deals: [],
-  filtered: [],
-  filters: { search: '', source: '', type: '', score: 0, sort: 'newest', verify: '' },
+(function() {
+'use strict';
+
+const BATCH = 48;
+const TYPE_COLORS = {
+  free_tier: '#10b981', free_trial: '#06b6d4', free_api_credits: '#8b5cf6',
+  discount: '#3b82f6', promo_code: '#f59e0b', lifetime_deal: '#ec4899',
+  giveaway: '#22c55e', price_cut: '#fb923c', launch: '#3b82f6',
+  twitter: '#6b7280', twitter_account: '#6b7280'
 };
 
-const BADGE_LABELS = {
-  discount: '💰 Discount',
-  free_tier: '🆓 Free Tier',
-  launch: '🚀 Launch',
-  lifetime: '📦 Lifetime',
-  promo_code: '🎟 Promo',
-  bypass: '🔓 Bypass',
-  exploit: '🔓 Exploit',
-  free_trial: '🆓 Free Trial',
+const TYPE_LABELS = {
+  free_tier: 'Free Tier', free_trial: 'Free Trial', free_api_credits: 'Free API Credits',
+  discount: 'Discount', promo_code: 'Promo Code', lifetime_deal: 'Lifetime Deal',
+  giveaway: 'Giveaway', price_cut: 'Price Cut', launch: 'Launch'
 };
 
-const VERIFY_LABELS = {
-  verified: '✅ Verified',
-  unverified: '⏳ Unverified',
-  suspicious: '⚠️ Suspicious',
-  expired: '❌ Expired',
+const SOURCE_ICONS = { twitter: '\u{1D54F}', twitter_account: '\u{1D54F}', hackernews: '\u{1F7E0}', youtube: '\u25B6\uFE0F', dealmirror: '\u{1FA9F}', dealify: '\u{1F3F7}\uFE0F', stacksocial: '\u{1F4DA}', rss: '\u{1F4E1}', google_news: '\u{1F4F0}' };
+
+const VERIFY_ICONS = { verified: '\u2713', unverified: '\u23F3', suspicious: '\u26A0\uFE0F', expired: '\u2717' };
+
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+const htmlEsc = s => s ? s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;') : '';
+const attrEsc = s => (s||'#').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+
+let state = {
+  deals: [], filtered: [], displayed: 0,
+  filters: { search: '', type: new Set(), source: new Set(), score: 1, verify: new Set(), price: 'any', expiry: 'all', aiModel: 'all', category: 'all' },
+  sort: 'newest', theme: 'dark'
 };
 
-const SOURCE_ICONS = {
-  twitter: '𝕏',
-  twitter_account: '𝕏',
-  hackernews: '🟠',
-  youtube: '▶️',
-  dealmirror: '🪞',
-  dealify: '🏷',
-  stacksocial: '📚',
-  rss: '📡',
-  google_news: '📰',
-};
-
-function timeAgo(dateStr) {
-  if (!dateStr) return '';
-  const now = new Date();
-  const d = new Date(dateStr);
-  const diff = (now - d) / 1000;
+function timeAgo(d) {
+  if (!d) return '';
+  const diff = (Date.now() - new Date(d).getTime()) / 1000;
   if (diff < 60) return 'just now';
-  if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
-  if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
-  if (diff < 604800) return Math.floor(diff / 86400) + 'd ago';
-  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  if (diff < 3600) return Math.floor(diff/60) + 'm ago';
+  if (diff < 86400) return Math.floor(diff/3600) + 'h ago';
+  if (diff < 604800) return Math.floor(diff/86400) + 'd ago';
+  return new Date(d).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+function isNew(d) { return d && (Date.now() - new Date(d).getTime()) < 86400000; }
+function isExpiringSoon(d) {
+  if (!d || d === 'Not specified') return false;
+  try { return (new Date(d).getTime() - Date.now()) < 604800000 && (new Date(d).getTime() - Date.now()) > 0; } catch { return false; }
+}
+
+function parsePrice(deal) {
+  if (deal.free_tier_details || deal.free_api_credits) return 0;
+  if (deal.discount_amount) {
+    const m = deal.discount_amount.match(/\$(\d+(?:\.\d+)?)/);
+    if (m) return parseFloat(m[1]);
+  }
+  if (deal.price_info) {
+    const m = deal.price_info.match(/\$(\d+(?:\.\d+)?)/);
+    if (m) return parseFloat(m[1]);
+  }
+  return null;
 }
 
 function showToast(msg) {
-  const t = document.getElementById('toast');
+  const t = $('#toast');
   t.textContent = msg;
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2000);
 }
 
-function copyCode(el) {
-  navigator.clipboard.writeText(el.textContent).then(() => showToast('Copied!'));
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(() => showToast('Copied to clipboard!'));
 }
 
-function renderScoreDots(score) {
-  let html = '<div class="score-dots">';
-  for (let i = 1; i <= 5; i++) {
-    html += `<div class="score-dot${i <= score ? ' filled' : ''}"></div>`;
+function getDomain(url) {
+  try { return new URL(url).hostname.replace('www.',''); } catch { return ''; }
+}
+
+// Theme
+function initTheme() {
+  const saved = localStorage.getItem('ai-deals-theme');
+  state.theme = saved || 'dark';
+  applyTheme();
+}
+
+function applyTheme() {
+  document.documentElement.setAttribute('data-theme', state.theme);
+  $('#theme-icon').textContent = state.theme === 'dark' ? '\u2600' : '\u{1F319}';
+}
+
+function toggleTheme() {
+  state.theme = state.theme === 'dark' ? 'light' : 'dark';
+  localStorage.setItem('ai-deals-theme', state.theme);
+  applyTheme();
+}
+
+// URL hash
+function hashToFilters() {
+  const h = location.hash.slice(1);
+  if (!h) return;
+  try {
+    const p = new URLSearchParams(h);
+    if (p.has('q')) { state.filters.search = p.get('q'); $('#search-input').value = p.get('q'); }
+    if (p.has('type')) { p.get('type').split(',').forEach(v => state.filters.type.add(v)); }
+    if (p.has('source')) { p.get('source').split(',').forEach(v => state.filters.source.add(v)); }
+    if (p.has('score')) { state.filters.score = parseInt(p.get('score')); }
+    if (p.has('verify')) { p.get('verify').split(',').forEach(v => state.filters.verify.add(v)); }
+    if (p.has('price')) { state.filters.price = p.get('price'); }
+    if (p.has('expiry')) { state.filters.expiry = p.get('expiry'); }
+    if (p.has('aiModel')) { state.filters.aiModel = p.get('aiModel'); }
+    if (p.has('category')) { state.filters.category = p.get('category'); }
+    if (p.has('sort')) { state.sort = p.get('sort'); }
+  } catch {}
+}
+
+function filtersToHash() {
+  const p = new URLSearchParams();
+  if (state.filters.search) p.set('q', state.filters.search);
+  if (state.filters.type.size) p.set('type', [...state.filters.type].join(','));
+  if (state.filters.source.size) p.set('source', [...state.filters.source].join(','));
+  if (state.filters.score > 1) p.set('score', state.filters.score);
+  if (state.filters.verify.size) p.set('verify', [...state.filters.verify].join(','));
+  if (state.filters.price !== 'any') p.set('price', state.filters.price);
+  if (state.filters.expiry !== 'all') p.set('expiry', state.filters.expiry);
+  if (state.filters.aiModel !== 'all') p.set('aiModel', state.filters.aiModel);
+  if (state.filters.category !== 'all') p.set('category', state.filters.category);
+  if (state.sort !== 'newest') p.set('sort', state.sort);
+  const s = p.toString();
+  history.replaceState(null, '', s ? '#' + s : location.pathname);
+}
+
+// Rendering
+function renderCard(deal) {
+  const type = deal.deal_type || 'unknown';
+  const brand = deal.normalized_brand || deal.tool_name || 'Unknown';
+  const title = deal.title || '';
+  const summary = deal.summary || '';
+  const link = deal.deal_url || deal.source_url || '#';
+  const domain = getDomain(link);
+  const vStatus = deal.verification_status || 'unverified';
+  const logoUrl = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(brand.split(' ')[0]) + '&background=6366f1&color=fff&size=44&bold=true&font-size=0.4';
+
+  let tagsHtml = '';
+  if (deal.discount_percent) tagsHtml += `<span class="deal-tag discount">${deal.discount_percent}% off</span>`;
+  if (deal.discount_amount) tagsHtml += `<span class="deal-tag discount">${htmlEsc(deal.discount_amount)} off</span>`;
+  if (deal.free_tier_details) tagsHtml += `<span class="deal-tag free">${htmlEsc(deal.free_tier_details.length > 30 ? deal.free_tier_details.substring(0,30)+'...' : deal.free_tier_details)}</span>`;
+  if (deal.free_api_credits) tagsHtml += `<span class="deal-tag credits">${htmlEsc(deal.free_api_credits)}</span>`;
+  if (deal.free_trial_details) tagsHtml += `<span class="deal-tag trial">Free Trial</span>`;
+  if (deal.price_info && !deal.free_tier_details && !deal.free_api_credits) tagsHtml += `<span class="deal-tag price">${htmlEsc(deal.price_info.length > 30 ? deal.price_info.substring(0,30)+'...' : deal.price_info)}</span>`;
+
+  let promoHtml = '';
+  if (deal.discount_code) {
+    promoHtml = `<div class="promo-code" onclick="event.stopPropagation();this.classList.add('copied');navigator.clipboard.writeText('${attrEsc(deal.discount_code)}').then(()=>{showToast('Code copied!');setTimeout(()=>this.classList.remove('copied'),1500)})" title="Click to copy">${htmlEsc(deal.discount_code)}</div>`;
   }
-  html += '</div>';
+
+  let badges = `<span class="deal-type-badge badge-${type}">${TYPE_LABELS[type] || type}</span>`;
+  if (isNew(deal.published_at)) badges += '<span class="new-badge">New</span>';
+  if (isExpiringSoon(deal.expiry)) badges += '<span class="expiring-badge">Expiring</span>';
+
+  let scoreHtml = '<div class="score-bar">';
+  for (let i = 1; i <= 5; i++) scoreHtml += `<div class="score-pip${i <= (deal.score||0) ? ' filled' : ''}"></div>`;
+  scoreHtml += '</div>';
+
+  let detailRows = '';
+  if (deal.how_to_claim) detailRows += `<div class="detail-row"><span class="detail-label">How to claim</span><span class="detail-value">${htmlEsc(deal.how_to_claim)}</span></div>`;
+  if (deal.expiry && deal.expiry !== 'Not specified') detailRows += `<div class="detail-row"><span class="detail-label">Expiry</span><span class="detail-value" style="color:var(--danger)">${htmlEsc(deal.expiry)}</span></div>`;
+  if (deal.free_tier_details) detailRows += `<div class="detail-row"><span class="detail-label">Free Tier</span><span class="detail-value">${htmlEsc(deal.free_tier_details)}</span></div>`;
+  if (deal.free_trial_details) detailRows += `<div class="detail-row"><span class="detail-label">Free Trial</span><span class="detail-value">${htmlEsc(deal.free_trial_details)}</span></div>`;
+  if (deal.free_api_credits) detailRows += `<div class="detail-row"><span class="detail-label">API Credits</span><span class="detail-value">${htmlEsc(deal.free_api_credits)}</span></div>`;
+  if (deal.discount_code) detailRows += `<div class="detail-row"><span class="detail-label">Promo Code</span><span class="detail-value" style="font-family:var(--font-mono);color:var(--accent)">${htmlEsc(deal.discount_code)}</span></div>`;
+  if (deal.verification_evidence) detailRows += `<div class="detail-row"><span class="detail-label">Evidence</span><span class="detail-value">${htmlEsc(deal.verification_evidence)}</span></div>`;
+  if (deal.model_provider) detailRows += `<div class="detail-row"><span class="detail-label">Provider</span><span class="detail-value">${htmlEsc(deal.model_provider)}</span></div>`;
+
+  return `<article class="deal-card" data-id="${deal.id}" onclick="toggleCard(this)">
+    <div class="card-top">
+      <div class="card-badges">${badges}</div>
+      <span class="verify-badge verify-${vStatus}" title="${vStatus}">${VERIFY_ICONS[vStatus]||''} ${vStatus}</span>
+    </div>
+    <div class="card-brand"><img class="brand-logo" src="${attrEsc(logoUrl)}" alt="" loading="lazy" onerror="this.style.display='none'">${htmlEsc(brand)}</div>
+    <div class="card-title">${htmlEsc(title.length > 120 ? title.substring(0,120)+'...' : title)}</div>
+    ${summary ? `<div class="card-summary">${htmlEsc(summary.length > 160 ? summary.substring(0,160)+'...' : summary)}</div>` : ''}
+    ${(tagsHtml || promoHtml) ? `<div class="card-deal-info">${tagsHtml}${promoHtml}</div>` : ''}
+    <div class="card-footer">
+      <div class="card-source">
+        <span class="source-icon">${SOURCE_ICONS[deal.source]||'\u{1F4C4}'}</span>
+        <span>${htmlEsc(deal.source||'')}</span>
+        ${deal.author ? `<span>@${htmlEsc((deal.author||'').replace('@',''))}</span>` : ''}
+        <span>${timeAgo(deal.published_at)}</span>
+      </div>
+      <div class="card-actions">
+        ${scoreHtml}
+        <button class="share-btn" onclick="event.stopPropagation();shareCard(${deal.id})" title="Share">&rarr;</button>
+        <a class="claim-btn" href="${attrEsc(link)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Claim Deal</a>
+      </div>
+    </div>
+    ${detailRows ? `<div class="card-detail">${detailRows}</div>` : ''}
+  </article>`;
+}
+
+window.toggleCard = function(el) {
+  el.classList.toggle('expanded');
+};
+
+window.shareCard = function(id) {
+  const url = location.origin + location.pathname + '#id=' + id;
+  navigator.clipboard.writeText(url).then(() => showToast('Link copied!'));
+};
+
+window.showToast = showToast;
+
+function renderSkeletons(count) {
+  let html = '';
+  for (let i = 0; i < count; i++) {
+    html += `<div class="skeleton-card"><div class="skeleton-line w40"></div><div class="skeleton-line h20"></div><div class="skeleton-line w80"></div><div class="skeleton-line w60"></div><div class="skeleton-line w80"></div></div>`;
+  }
   return html;
 }
 
-function renderCard(deal) {
-  const type = deal.deal_type || 'unknown';
-  const badgeClass = `badge-${type}`;
-  const badgeLabel = BADGE_LABELS[type] || type;
-  const sourceIcon = SOURCE_ICONS[deal.source] || '📄';
-  const title = deal.tool_name || 'Unknown Tool';
-  const link = deal.deal_url || deal.source_url || '#';
-  const domain = (() => { try { return new URL(link).hostname.replace('www.',''); } catch { return ''; }})();
-  const vStatus = deal.verification_status || 'unverified';
-  const vLabel = VERIFY_LABELS[vStatus] || vStatus;
-  const vEvidence = deal.verification_evidence || '';
-
-  let infoHtml = '';
-  if (deal.discount_percent || deal.discount_amount) {
-    const parts = [];
-    if (deal.discount_percent) parts.push(deal.discount_percent + '% off');
-    if (deal.discount_amount) parts.push('$' + deal.discount_amount + ' off');
-    infoHtml += `<div class="deal-row"><span class="deal-label">Discount</span><span class="deal-value highlight">${parts.join(' · ')}</span></div>`;
-  }
-  if (deal.discount_code) {
-    infoHtml += `<div class="deal-row"><span class="deal-label">Code</span><span class="code-box" onclick="copyCode(this)" title="Click to copy">${deal.discount_code}</span></div>`;
-  }
-  if (deal.price_info) {
-    infoHtml += `<div class="deal-row"><span class="deal-label">Price</span><span class="deal-value">${deal.price_info}</span></div>`;
-  }
-  if (deal.free_tier_details) {
-    infoHtml += `<div class="deal-row"><span class="deal-label">Free Tier</span><span class="deal-value highlight">${deal.free_tier_details}</span></div>`;
-  }
-  if (deal.free_api_credits) {
-    infoHtml += `<div class="deal-row"><span class="deal-label">Credits</span><span class="deal-value highlight">${deal.free_api_credits}</span></div>`;
-  }
-  if (deal.free_trial_details) {
-    infoHtml += `<div class="deal-row"><span class="deal-label">Trial</span><span class="deal-value">${deal.free_trial_details}</span></div>`;
-  }
-  if (deal.expiry && deal.expiry !== 'Not specified') {
-    infoHtml += `<div class="deal-row"><span class="deal-label">Expiry</span><span class="deal-value" style="color:var(--red)">${deal.expiry}</span></div>`;
-  }
-
-  let summaryHtml = '';
-  if (deal.summary) {
-    summaryHtml = `<div class="card-summary">${escapeHtml(deal.summary).substring(0, 200)}${deal.summary.length > 200 ? '…' : ''}</div>`;
-  }
-
-  return `
-    <article class="deal-card">
-      <div class="card-header">
-        <div class="card-title"><a href="${escapeAttr(link)}" target="_blank" rel="noopener">${escapeHtml(title)}</a></div>
-        <span class="badge ${badgeClass}">${badgeLabel}</span>
-      </div>
-      <div class="card-meta">
-        ${renderScoreDots(deal.score || 0)}
-        <span class="verify-badge verify-${vStatus}">${vLabel}</span>
-        <span class="meta-tag">${sourceIcon} ${escapeHtml(deal.source)}</span>
-        ${deal.author ? `<span class="meta-tag">@${escapeHtml(deal.author.replace('@',''))}</span>` : ''}
-        ${deal.is_ai_model ? '<span class="meta-tag">🤖 Model</span>' : ''}
-      </div>
-      ${vEvidence ? `<div class="card-summary" style="border-left-color:${vStatus === 'verified' ? 'var(--green)' : vStatus === 'expired' ? 'var(--red)' : 'var(--yellow)'}"><strong>${vLabel}:</strong> ${escapeHtml(vEvidence).substring(0, 150)}${vEvidence.length > 150 ? '…' : ''}</div>` : ''}
-      ${infoHtml ? `<div class="deal-info">${infoHtml}</div>` : ''}
-      ${summaryHtml}
-      <div class="card-footer">
-        <span class="card-date">${timeAgo(deal.published_at)}</span>
-        <a class="deal-link" href="${escapeAttr(link)}" target="_blank" rel="noopener">${domain ? 'View on ' + domain : 'View Deal'} →</a>
-      </div>
-    </article>`;
+function renderEmpty() {
+  return `<div class="empty-state">
+    <div class="empty-icon">\u{1F50D}</div>
+    <h3>No deals found</h3>
+    <p>Try adjusting your filters or search query</p>
+  </div>`;
 }
 
-function escapeHtml(s) {
-  if (!s) return '';
-  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
-function escapeAttr(s) {
-  if (!s) return '#';
-  return s.replace(/"/g,'&quot;').replace(/'/g,'&#39;');
-}
-
+// Filtering
 function applyFilters() {
-  const { search, source, type, score, sort, verify } = STATE.filters;
+  const { search, type, source, score, verify, price, expiry, aiModel, category } = state.filters;
   const q = search.toLowerCase().trim();
 
-  STATE.filtered = STATE.deals.filter(d => {
-    if (source && d.source !== source) return false;
-    if (type && d.deal_type !== type) return false;
-    if (score && (d.score || 0) < score) return false;
-    if (verify && (d.verification_status || 'unverified') !== verify) return false;
+  state.filtered = state.deals.filter(d => {
+    if (category !== 'all') {
+      if (category === '_twitter') {
+        if (d.source !== 'twitter' && d.source !== 'twitter_account') return false;
+      } else if (d.deal_type !== category) return false;
+    }
+    if (type.size && !type.has(d.deal_type)) return false;
+    if (source.size && !source.has(d.source)) return false;
+    if (score > 1 && (d.score || 0) < score) return false;
+    if (verify.size && !verify.has(d.verification_status || 'unverified')) return false;
+    if (aiModel === 'true' && !d.is_ai_model) return false;
+    if (aiModel === 'false' && d.is_ai_model) return false;
+    if (price === 'free') {
+      if (!d.free_tier_details && !d.free_api_credits && !d.free_trial_details) return false;
+    } else if (price === 'under10') {
+      const p = parsePrice(d);
+      if (p !== null && p > 10) return false;
+      if (p === null && !d.free_tier_details && !d.free_api_credits && !d.free_trial_details) return false;
+    } else if (price === 'under50') {
+      const p = parsePrice(d);
+      if (p !== null && p > 50) return false;
+      if (p === null && !d.free_tier_details && !d.free_api_credits && !d.free_trial_details) return false;
+    }
+    if (expiry === 'active') {
+      if (d.expiry && d.expiry !== 'Not specified') {
+        try { if (new Date(d.expiry).getTime() < Date.now()) return false; } catch {}
+      }
+    } else if (expiry === 'expiring') {
+      if (!isExpiringSoon(d.expiry)) return false;
+    }
     if (q) {
-      const haystack = [d.tool_name, d.normalized_brand, d.title, d.summary, d.discount_code, d.author, d.source]
-        .filter(Boolean).join(' ').toLowerCase();
-      if (!haystack.includes(q)) return false;
+      const hay = [d.tool_name, d.normalized_brand, d.title, d.summary, d.discount_code, d.author, d.source, d.model_provider].filter(Boolean).join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
     }
     return true;
   });
 
-  STATE.filtered.sort((a, b) => {
-    if (sort === 'score') return (b.score || 0) - (a.score || 0) || new Date(b.published_at) - new Date(a.published_at);
-    if (sort === 'newest') return new Date(b.published_at) - new Date(a.published_at);
-    return new Date(a.published_at) - new Date(b.published_at);
-  });
+  // Sort
+  const sortFn = {
+    newest: (a, b) => new Date(b.published_at||0) - new Date(a.published_at||0),
+    score: (a, b) => (b.score||0) - (a.score||0) || new Date(b.published_at||0) - new Date(a.published_at||0),
+    expiring: (a, b) => {
+      const ae = a.expiry ? new Date(a.expiry).getTime() : Infinity;
+      const be = b.expiry ? new Date(b.expiry).getTime() : Infinity;
+      return ae - be;
+    }
+  };
+  state.filtered.sort(sortFn[state.sort] || sortFn.newest);
 
-  render();
+  state.displayed = 0;
+  renderDeals();
+  renderActiveFilters();
+  filtersToHash();
+  updateResultCount();
 }
 
-function render() {
-  const grid = document.getElementById('deals-grid');
-  if (!STATE.filtered.length) {
-    grid.innerHTML = `
-      <div class="empty-state">
-        <div class="emoji">🔍</div>
-        <p>No deals match your filters</p>
-      </div>`;
+function renderDeals() {
+  const grid = $('#deals-grid');
+  const end = Math.min(state.displayed + BATCH, state.filtered.length);
+  const slice = state.filtered.slice(0, end);
+  state.displayed = end;
+
+  if (slice.length === 0) {
+    grid.innerHTML = renderEmpty();
     return;
   }
-  grid.innerHTML = STATE.filtered.map(renderCard).join('');
+
+  grid.innerHTML = slice.map(renderCard).join('');
+  if (end < state.filtered.length) {
+    grid.innerHTML += `<div class="load-more-wrap"><button class="load-more-btn" id="load-more">Load more (${state.filtered.length - end} remaining)</button></div>`;
+    $('#load-more').onclick = () => { state.displayed = end; renderMoreDeals(); };
+  }
+
+  requestAnimationFrame(() => observeCards());
 }
 
-function populateFilters() {
-  const sources = [...new Set(STATE.deals.map(d => d.source).filter(Boolean))].sort();
-  const types = [...new Set(STATE.deals.map(d => d.deal_type).filter(Boolean))].sort();
+function renderMoreDeals() {
+  const grid = $('#deals-grid');
+  const loadWrap = grid.querySelector('.load-more-wrap');
+  if (loadWrap) loadWrap.remove();
 
-  const srcSel = document.getElementById('filter-source');
-  sources.forEach(s => {
-    const opt = document.createElement('option');
-    opt.value = s;
-    opt.textContent = (SOURCE_ICONS[s] || '📄') + ' ' + s.replace(/_/g, ' ');
-    srcSel.appendChild(opt);
+  const end = Math.min(state.displayed + BATCH, state.filtered.length);
+  const fragment = document.createDocumentFragment();
+  const temp = document.createElement('div');
+  temp.innerHTML = state.filtered.slice(state.displayed, end).map(renderCard).join('');
+  while (temp.firstChild) fragment.appendChild(temp.firstChild);
+  grid.appendChild(fragment);
+  state.displayed = end;
+
+  if (end < state.filtered.length) {
+    const wrap = document.createElement('div');
+    wrap.className = 'load-more-wrap';
+    wrap.innerHTML = `<button class="load-more-btn" id="load-more">Load more (${state.filtered.length - end} remaining)</button>`;
+    grid.appendChild(wrap);
+    wrap.querySelector('#load-more').onclick = () => { state.displayed = end; renderMoreDeals(); };
+  }
+
+  requestAnimationFrame(() => observeCards());
+}
+
+let observer;
+function observeCards() {
+  if (!observer) observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+  }, { threshold: 0.05, rootMargin: '50px' });
+  $$('.deal-card:not(.visible)').forEach(el => observer.observe(el));
+}
+
+function updateResultCount() {
+  const el = $('#result-count');
+  el.innerHTML = `Showing <strong>${state.filtered.length}</strong> of ${state.deals.length} deals`;
+}
+
+function renderActiveFilters() {
+  const bar = $('#active-filters');
+  const chips = [];
+  const f = state.filters;
+  if (f.search) chips.push({ label: `"${f.search}"`, clear: () => { f.search = ''; $('#search-input').value = ''; }});
+  f.type.forEach(v => chips.push({ label: TYPE_LABELS[v]||v, clear: () => f.type.delete(v) }));
+  f.source.forEach(v => chips.push({ label: v.replace(/_/g,' '), clear: () => f.source.delete(v) }));
+  if (f.score > 1) chips.push({ label: `Score ${f.score}+`, clear: () => { f.score = 1; $('#score-slider').value = 1; }});
+  f.verify.forEach(v => chips.push({ label: v, clear: () => f.verify.delete(v) }));
+  if (f.price !== 'any') chips.push({ label: f.price, clear: () => f.price = 'any' });
+  if (f.expiry !== 'all') chips.push({ label: f.expiry, clear: () => f.expiry = 'all' });
+  if (f.aiModel !== 'all') chips.push({ label: f.aiModel === 'true' ? 'Models' : 'Tools', clear: () => f.aiModel = 'all' });
+  if (f.category !== 'all') chips.push({ label: f.category, clear: () => f.category = 'all' });
+
+  bar.innerHTML = chips.map((c,i) =>
+    `<span class="filter-chip active" data-idx="${i}" style="cursor:pointer">${htmlEsc(c.label)} &times;</span>`
+  ).join('');
+
+  bar.querySelectorAll('.filter-chip').forEach((el, i) => {
+    el.onclick = () => { chips[i].clear(); applyFilters(); };
+  });
+}
+
+// Tabs
+function buildTabs() {
+  const tab = $('#category-tabs');
+  const counts = { all: state.deals.length };
+  state.deals.forEach(d => {
+    const t = d.deal_type || 'unknown';
+    counts[t] = (counts[t]||0) + 1;
   });
 
-  const typeSel = document.getElementById('filter-type');
-  types.forEach(t => {
-    const opt = document.createElement('option');
-    opt.value = t;
-    opt.textContent = (BADGE_LABELS[t] || t);
-    typeSel.appendChild(opt);
+  let html = `<button class="tab-chip active" data-category="all">All <span class="tab-count">${counts.all}</span></button>`;
+  const order = ['free_tier', 'free_api_credits', 'free_trial', 'discount', 'promo_code', 'lifetime_deal', 'giveaway', 'price_cut', 'launch'];
+  order.forEach(t => {
+    if (counts[t]) {
+      html += `<button class="tab-chip" data-category="${t}">${TYPE_LABELS[t]||t} <span class="tab-count">${counts[t]}</span></button>`;
+    }
   });
+
+  tab.innerHTML = html;
+  tab.querySelectorAll('.tab-chip').forEach(btn => {
+    btn.onclick = () => {
+      tab.querySelectorAll('.tab-chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.filters.category = btn.dataset.category;
+      applyFilters();
+    };
+  });
+}
+
+// Filter chips
+function buildFilterChips() {
+  const typeCounts = {};
+  state.deals.forEach(d => { const t = d.deal_type||'unknown'; typeCounts[t] = (typeCounts[t]||0)+1; });
+  const typeChips = $('#filter-type-chips');
+  Object.keys(typeCounts).sort().forEach(t => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.dataset.filter = 'type';
+    btn.dataset.value = t;
+    btn.innerHTML = `${TYPE_LABELS[t]||t} <span style="opacity:0.5;font-size:0.65rem">${typeCounts[t]}</span>`;
+    if (state.filters.type.has(t)) btn.classList.add('active');
+    btn.onclick = () => {
+      if (state.filters.type.has(t)) state.filters.type.delete(t); else state.filters.type.add(t);
+      btn.classList.toggle('active');
+      applyFilters();
+    };
+    typeChips.appendChild(btn);
+  });
+
+  const srcCounts = {};
+  state.deals.forEach(d => { const s = d.source||'unknown'; srcCounts[s] = (srcCounts[s]||0)+1; });
+  const srcChips = $('#filter-source-chips');
+  Object.keys(srcCounts).sort().forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.dataset.filter = 'source';
+    btn.dataset.value = s;
+    btn.innerHTML = `${(SOURCE_ICONS[s]||'')} ${s.replace(/_/g,' ')} <span style="opacity:0.5;font-size:0.65rem">${srcCounts[s]}</span>`;
+    if (state.filters.source.has(s)) btn.classList.add('active');
+    btn.onclick = () => {
+      if (state.filters.source.has(s)) state.filters.source.delete(s); else state.filters.source.add(s);
+      btn.classList.toggle('active');
+      applyFilters();
+    };
+    srcChips.appendChild(btn);
+  });
+
+  const verChips = $('#filter-verify-chips');
+  ['verified', 'unverified', 'suspicious', 'expired'].forEach(v => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.dataset.filter = 'verify';
+    btn.dataset.value = v;
+    btn.textContent = v;
+    if (state.filters.verify.has(v)) btn.classList.add('active');
+    btn.onclick = () => {
+      if (state.filters.verify.has(v)) state.filters.verify.delete(v); else state.filters.verify.add(v);
+      btn.classList.toggle('active');
+      applyFilters();
+    };
+    verChips.appendChild(btn);
+  });
+
+  const priceChips = $('#filter-price-chips');
+  [['any','Any'],['free','Free Only'],['under10','Under $10'],['under50','Under $50']].forEach(([v,l]) => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-chip' + (state.filters.price === v ? ' active' : '');
+    btn.dataset.filter = 'price';
+    btn.dataset.value = v;
+    btn.textContent = l;
+    btn.onclick = () => {
+      priceChips.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.filters.price = v;
+      applyFilters();
+    };
+    priceChips.appendChild(btn);
+  });
+
+  const expChips = $('#filter-expiry-chips');
+  [['all','All'],['active','Active Only'],['expiring','Expiring Soon']].forEach(([v,l]) => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-chip' + (state.filters.expiry === v ? ' active' : '');
+    btn.dataset.filter = 'expiry';
+    btn.dataset.value = v;
+    btn.textContent = l;
+    btn.onclick = () => {
+      expChips.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.filters.expiry = v;
+      applyFilters();
+    };
+    expChips.appendChild(btn);
+  });
+}
+
+// Init
+async function init() {
+  initTheme();
+  $('#deals-grid').innerHTML = renderSkeletons(12);
+
+  try {
+    const resp = await fetch('deals.json?' + Date.now());
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+    state.deals = data.deals || [];
+
+    // Stats
+    const tools = new Set(state.deals.map(d => d.normalized_brand || d.tool_name).filter(Boolean));
+    const verified = state.deals.filter(d => d.verification_status === 'verified').length;
+    $('#stat-total').textContent = state.deals.length;
+    $('#stat-tools').textContent = tools.size;
+    $('#stat-verified').textContent = verified;
+
+    buildTabs();
+    buildFilterChips();
+    hashToFilters();
+
+    // Sync tab highlight
+    if (state.filters.category !== 'all') {
+      $$('.tab-chip').forEach(b => { b.classList.toggle('active', b.dataset.category === state.filters.category); });
+    }
+    // Sync verify chips
+    $$('#filter-verify-chips .filter-chip').forEach(b => {
+      if (state.filters.verify.has(b.dataset.value)) b.classList.add('active');
+    });
+    // Sync price chips
+    $$('#filter-price-chips .filter-chip').forEach(b => {
+      b.classList.toggle('active', b.dataset.value === state.filters.price);
+    });
+    // Sync expiry chips
+    $$('#filter-expiry-chips .filter-chip').forEach(b => {
+      b.classList.toggle('active', b.dataset.value === state.filters.expiry);
+    });
+    // Sync sort
+    $('#sort-select').value = state.sort;
+
+    applyFilters();
+    wireEvents();
+  } catch(err) {
+    $('#deals-grid').innerHTML = renderEmpty();
+  }
 }
 
 function wireEvents() {
   let debounce;
-  document.getElementById('search').addEventListener('input', e => {
+  $('#search-input').addEventListener('input', e => {
     clearTimeout(debounce);
-    debounce = setTimeout(() => { STATE.filters.search = e.target.value; applyFilters(); }, 200);
+    debounce = setTimeout(() => { state.filters.search = e.target.value; applyFilters(); }, 200);
   });
 
-  ['filter-source', 'filter-type', 'filter-score', 'filter-sort', 'filter-verify'].forEach(id => {
-    document.getElementById(id).addEventListener('change', e => {
-      const key = id.replace('filter-', '');
-      STATE.filters[key] = key === 'score' ? parseInt(e.target.value) || 0 : e.target.value;
-      applyFilters();
-    });
+  $('#score-slider').addEventListener('input', e => {
+    state.filters.score = parseInt(e.target.value);
+    $('#score-val').textContent = state.filters.score > 1 ? 'Score ' + state.filters.score + '+' : 'Any score';
   });
+  $('#score-slider').addEventListener('change', () => applyFilters());
 
-  const btn = document.getElementById('back-to-top');
-  window.addEventListener('scroll', () => {
-    btn.classList.toggle('visible', window.scrollY > 500);
-  });
-  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-}
-
-async function init() {
-  try {
-    const resp = await fetch('deals.json?' + Date.now());
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    const data = await resp.json();
-
-    STATE.deals = data.deals || [];
-    document.getElementById('total-deals').textContent = data.total || STATE.deals.length;
-    document.getElementById('last-updated').textContent = timeAgo(data.generated_at);
-
-    // Verification stats
-    const vCounts = { verified: 0, unverified: 0, suspicious: 0, expired: 0 };
-    STATE.deals.forEach(d => { vCounts[d.verification_status || 'unverified']++; });
-    const statsEl = document.getElementById('header-stats');
-    if (statsEl) {
-      statsEl.innerHTML = `
-        <span><span class="stat-value">${data.total || STATE.deals.length}</span> deals</span>
-        <span>✅ <span class="stat-value">${vCounts.verified}</span> verified</span>
-        <span>⚠️ <span class="stat-value">${vCounts.suspicious}</span> suspicious</span>
-        <span>❌ <span class="stat-value">${vCounts.expired}</span> expired</span>
-        <span>Updated <span class="stat-value">${timeAgo(data.generated_at)}</span></span>
-      `;
-    }
-
-    populateFilters();
-    wireEvents();
+  $('#sort-select').addEventListener('change', e => {
+    state.sort = e.target.value;
     applyFilters();
-  } catch (err) {
-    document.getElementById('deals-grid').innerHTML = `
-      <div class="empty-state">
-        <div class="emoji">⚠️</div>
-        <p>Failed to load deals. The data file may not exist yet.</p>
-        <p style="margin-top:0.5rem;font-size:0.9rem;color:var(--text-muted)">${escapeHtml(err.message)}</p>
-      </div>`;
-  }
+  });
+
+  $('#clear-filters').addEventListener('click', () => {
+    state.filters = { search: '', type: new Set(), source: new Set(), score: 1, verify: new Set(), price: 'any', expiry: 'all', aiModel: 'all', category: 'all' };
+    state.sort = 'newest';
+    $('#search-input').value = '';
+    $('#score-slider').value = 1;
+    $('#score-val').textContent = 'Any score';
+    $('#sort-select').value = 'newest';
+    $$('.filter-chip').forEach(c => c.classList.remove('active'));
+    $$('.tab-chip').forEach(b => b.classList.toggle('active', b.dataset.category === 'all'));
+    $$('#filter-price-chips .filter-chip').forEach(b => b.classList.toggle('active', b.dataset.value === 'any'));
+    $$('#filter-expiry-chips .filter-chip').forEach(b => b.classList.toggle('active', b.dataset.value === 'all'));
+    applyFilters();
+  });
+
+  $('#theme-toggle').addEventListener('click', toggleTheme);
+
+  // AI model filter chips
+  $$('[data-filter="ai_model"]').forEach(btn => {
+    if (btn.dataset.value === state.filters.aiModel) btn.classList.add('active');
+    btn.onclick = () => {
+      $$('[data-filter="ai_model"]').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.filters.aiModel = btn.dataset.value;
+      applyFilters();
+    };
+  });
+
+  // Back to top
+  const btt = $('#back-top');
+  window.addEventListener('scroll', () => btt.classList.toggle('visible', window.scrollY > 600), { passive: true });
+  btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Mobile filter drawer
+  const overlay = $('#filter-overlay');
+  $('#mobile-filter-btn').addEventListener('click', () => {
+    const drawerFilters = $('#drawer-filters');
+    drawerFilters.innerHTML = $('#sidebar').innerHTML;
+    // Re-wire drawer events
+    drawerFilters.querySelectorAll('.search-input').forEach(inp => {
+      inp.value = state.filters.search;
+      inp.addEventListener('input', e => { state.filters.search = e.target.value; applyFilters(); });
+    });
+    drawerFilters.querySelectorAll('.score-slider').forEach(sl => {
+      sl.value = state.filters.score;
+      sl.addEventListener('input', e => {
+        state.filters.score = parseInt(e.target.value);
+        drawerFilters.querySelectorAll('.score-val').forEach(s => s.textContent = state.filters.score > 1 ? 'Score ' + state.filters.score + '+' : 'Any score');
+      });
+      sl.addEventListener('change', () => applyFilters());
+    });
+    drawerFilters.querySelectorAll('.sort-select').forEach(sel => {
+      sel.value = state.sort;
+      sel.addEventListener('change', e => { state.sort = e.target.value; applyFilters(); });
+    });
+    overlay.classList.add('open');
+  });
+  $('#drawer-close').addEventListener('click', () => overlay.classList.remove('open'));
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
+
+  // Keyboard shortcuts
+  document.addEventListener('keydown', e => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') {
+      if (e.key === 'Escape') { e.target.blur(); state.filters.search = ''; $('#search-input').value = ''; applyFilters(); }
+      return;
+    }
+    if (e.key === '/') { e.preventDefault(); $('#search-input').focus(); }
+    if (e.key === 'Escape') { $('#search-input').blur(); state.filters.search = ''; $('#search-input').value = ''; applyFilters(); }
+  });
+
+  // Hash change
+  window.addEventListener('hashchange', () => { hashToFilters(); applyFilters(); });
 }
 
 init();
+})();
 </script>
 </body>
 </html>
